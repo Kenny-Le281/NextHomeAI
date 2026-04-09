@@ -24,8 +24,16 @@ def extract_json_text(text: str) -> str:
     return text[start:end + 1].strip()
 
 
-def classify_intent_tool(user_message: str, current_filters: dict) -> IntentResult:
-    prompt = build_intent_classifier_prompt(user_message, current_filters)
+def classify_intent_tool(
+    user_message: str,
+    current_filters: dict,
+    current_context: dict,
+) -> IntentResult:
+    prompt = build_intent_classifier_prompt(
+        user_message=user_message,
+        current_filters=current_filters,
+        current_context=current_context,
+    )
     llm_output = call_ollama(prompt)
 
     print("=== RAW LLM OUTPUT ===")

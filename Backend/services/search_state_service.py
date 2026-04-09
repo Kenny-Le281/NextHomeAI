@@ -1,22 +1,21 @@
-from typing import List
 from models.housing_filters import HousingFilters
 
 
-def has_required_info(filters: HousingFilters) -> bool:
+def has_required_info_service(filters: HousingFilters) -> bool:
     return (
-        bool(filters.location.city.strip())
-        and filters.price.max is not None
+        filters.city is not None
+        and filters.price_max is not None
         and filters.beds_min is not None
     )
 
 
-def get_missing_fields(filters: HousingFilters) -> List[str]:
+def get_missing_fields_service(filters: HousingFilters) -> list[str]:
     missing = []
 
-    if not filters.location.city.strip():
-        missing.append("city or area")
+    if filters.city is None:
+        missing.append("city")
 
-    if filters.price.max is None:
+    if filters.price_max is None:
         missing.append("maximum price")
 
     if filters.beds_min is None:
