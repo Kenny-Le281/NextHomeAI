@@ -1,220 +1,249 @@
-import json
+from datetime import date
+from typing import Optional, List, Any
+
+from pydantic import BaseModel, Field, field_validator
 
 
-def build_filter_parser_prompt(user_query: str) -> str:
-    schema_example = {
-        "location": {
-            "city": "",
-            "region_id": None,
-            "radius_km": None,
-            "neighborhoods": []
-        },
-        "price": {
-            "min": None,
-            "max": None,
-            "currency": "CAD"
-        },
-        "beds_min": None,
-        "beds_max": None,
-        "baths_min": None,
-        "baths_max": None,
-        "property_types": [],
-        "must_have": [],
-        "nice_to_have": [],
-        "move_in": None,
-        "min_sqft": None,
-        "min_lot_size": None,
-        "notes": []
-    }
+class Location(BaseModel):
+    city: str = ""
+    region_id: Optional[str] = None
+    radius_km: Optional[float] = None
+    neighborhoods: List[str] = Field(default_factory=list)
 
-    return f"""
-You are a housing search filter parser.
+    @field_validator("city", mode="before")
+    @classmethod
+    def normalize_city(cls, value: Any) -> str:
+        if value is None:
+            return ""
+        return str(value).strip()
 
-Convert the user's housing request into VALID JSON only.
+    @field_validator("region_id", mode="before")
+    @classmethod
+    def normalize_region_id(cls, value: Any) -> Optional[str]:
+        if value is None or str(value).strip() == "":
+            return None
+        return str(value).strip()
 
-Rules:
-- Return valid JSON only.
-- Do not include markdown.
-- Do not include triple backticks.
-- Do not include comments.
-- Do not include explanations.
-- Do not include API parameters or numeric API codes.
-- Use semantic values only.
-- Example: use "house", not 1.
-- Do not invent neighborhoods or areas not explicitly stated by the user.
-- If the user only mentions a city (e.g. "Ottawa"), leave neighborhoods as an empty list.
-- Use exactly this schema:
-{json.dumps(schema_example, indent=2)}
+    @field_validator("radius_km", mode="before")
+    @classmethod
+    def normalize_radius_km(cls, value: Any) -> Optional[float]:
+        if value is None or value == "":
+            return None
+        if isinstance(value, (int, float)):
+            return float(value)
 
-Important rules:
-- Leave unknown values as null or [].
-- Default currency to CAD unless the user clearly says otherwise.
-- "budget", "up to", "max", "under", "no more than" → set as price max.
-- "at least", "min", "starting from", "above" → set as price min.
-- Only put something in "must_have" if the user clearly says it is required, mandatory, must-have, needs, or required.
-- If the user says "would be nice", "preferred", "ideally", or similar, put it in "nice_to_have".
-- If the user gives a range like "1 or 2 bathrooms", use baths_min=1 and baths_max=2.
+        text = str(value).strip().lower().replace("km", "").strip()
+        try:
+            return float(text)
+        except ValueError:
+            return None
 
-Normalization rules:
-- "laundry", "washer/dryer", "in-unit laundry" -> "in_unit_laundry"
-- "cat friendly", "cats allowed" -> "cat_friendly"
-- "dog friendly", "dogs allowed" -> "dog_friendly"
-- "parking" -> "parking"
-- "gym" -> "gym"
-- "air conditioning" -> "ac"
-- "pool" -> "pool"
-- "garage" -> "garage"
-- If the user says something like "Kanata, Ottawa", set city="Ottawa" and neighborhoods=["Kanata"].
-- Convert move-in dates to YYYY-MM-DD when possible.
-- Put minimum square footage into "min_sqft".
-- Put minimum lot size into "min_lot_size".
-- If something important is unclear, add a short note in "notes".
-
-User query:
-{user_query}
-""".strip()
+    @field_validator("neighborhoods", mode="before")
+    @classmethod
+    def normalize_neighborhoods(cls, value: Any) -> List[str]:
+        if value is None:
+            return []
+        if isinstance(value, list):
+            cleaned = []
+            seen = set()
+            for item in value:
+                text = str(item).strip()
+                if text and text.lower() not in seen:
+                    cleaned.append(text)
+                    seen.add(text.lower())
+            return cleaned
+        return []
 
 
-def build_intent_classifier_prompt(user_message: str, current_filters: dict) -> str:
-    schema_example = {
-        "intent": "provide_search_info",
-        "reason": "The user is giving property requirements."
-    }
+class Price(BaseModel):
+    min: Optional[int] = None
+    max: Optional[int] = None
+    currency: str = "CAD"
 
-    return f"""
-You are an intent classifier for a real estate chatbot.
+    @field_validator("currency", mode="before")
+    @classmethod
+    def normalize_currency(cls, value: Any) -> str:
+        if value is None or str(value).strip() == "":
+            return "CAD"
+        return str(value).strip().upper()
 
-Classify the user's latest message into exactly one of these intents:
+    @field_validator("min", "max", mode="before")
+    @classmethod
+    def normalize_price_fields(cls, value: Any) -> Optional[int]:
+        if value is None or value == "":
+            return None
+        if isinstance(value, int):
+            return value
+        if isinstance(value, float):
+            return int(value)
 
-- provide_search_info
-  Use this when the user is giving initial property requirements.
+        text = str(value).strip().lower()
+        text = text.replace("$", "").replace(",", "").replace("bucks", "").strip()
 
-- refine_search
-  Use this when the user is modifying, adding, or removing property requirements already discussed.
+        if text.isdigit():
+            return int(text)
 
-- general_question
-  Use this when the user is asking a question that should be answered conversationally rather than parsed as search filters.
-
-- conversation
-  Use this for greetings, casual chat, or non-search conversational turns.
-
-- confirm_search
-  Use this when the user is confirming the collected search info or asking to proceed.
-
-- end_chat
-  Use this when the user wants to exit or stop the conversation.
-
-Current filters:
-{json.dumps(current_filters, indent=2)}
-
-User message:
-{user_message}
-
-Rules:
-- Return valid JSON only.
-- Do not include markdown.
-- Do not include triple backticks.
-- Do not include comments.
-- Use exactly this schema:
-{json.dumps(schema_example, indent=2)}
-- "general_question" should be used for questions like:
-  "What does townhouse mean?"
-  "Why do you need my budget?"
-  "Is Kanata expensive?"
-- "conversation" should be used for casual messages like:
-  "Hi"
-  "Thanks"
-  "How are you?"
-- "provide_search_info" and "refine_search" should only be used when the user is clearly giving or changing property requirements.
-""".strip()
+        return None
 
 
-def build_normal_chat_prompt(user_message: str, current_filters: dict) -> str:
-    return f"""
-You are a helpful real estate chatbot.
+class HousingFilters(BaseModel):
+    location: Location = Field(default_factory=Location)
+    price: Price = Field(default_factory=Price)
+    beds_min: Optional[int] = None
+    beds_max: Optional[int] = None
+    baths_min: Optional[float] = None
+    baths_max: Optional[float] = None
+    property_types: List[str] = Field(default_factory=list)
+    must_have: List[str] = Field(default_factory=list)
+    nice_to_have: List[str] = Field(default_factory=list)
+    move_in: Optional[date] = None
+    min_sqft: Optional[int] = None
+    min_lot_size: Optional[int] = None
+    notes: List[str] = Field(default_factory=list)
 
-The user is not currently giving structured search filters. Respond naturally and helpfully.
+    @field_validator("beds_min", "beds_max", "min_sqft", "min_lot_size", mode="before")
+    @classmethod
+    def normalize_int_fields(cls, value: Any) -> Optional[int]:
+        if value is None or value == "":
+            return None
+        if isinstance(value, int):
+            return value
+        if isinstance(value, float):
+            return int(value)
 
-Current known filters:
-{json.dumps(current_filters, indent=2)}
+        text = str(value).strip().lower()
+        text = text.replace(",", "").replace("sqft", "").replace("sq. ft.", "").strip()
 
-User message:
-{user_message}
+        if text.isdigit():
+            return int(text)
 
-Instructions:
-- Answer naturally and conversationally.
-- If relevant, you may refer to the current filters.
-- Do not pretend to have searched listings.
-- Do not invent facts about specific listings.
-- Do not modify the user's filters.
-- Keep the reply concise but useful.
-- Do not use bullet points.
+        return None
 
-Return only plain text.
-""".strip()
+    @field_validator("baths_min", "baths_max", mode="before")
+    @classmethod
+    def normalize_bath_fields(cls, value: Any) -> Optional[float]:
+        if value is None or value == "":
+            return None
+        if isinstance(value, (int, float)):
+            return float(value)
 
+        text = str(value).strip()
+        try:
+            return float(text)
+        except ValueError:
+            return None
 
-def build_missing_info_response_prompt(current_filters: dict, missing_fields: list[str]) -> str:
-    return f"""
-You are a helpful real estate search assistant.
+    @field_validator("property_types", mode="before")
+    @classmethod
+    def normalize_property_types(cls, value: Any) -> List[str]:
+        if value is None:
+            return []
 
-Current parsed filters:
-{json.dumps(current_filters, indent=2)}
+        mapping = {
+            1: "house",
+            2: "condo",
+            3: "townhouse",
+            4: "multi-family",
+            5: "land",
+            6: "other",
+            7: "manufactured",
+            8: "co-op",
+            "1": "house",
+            "2": "condo",
+            "3": "townhouse",
+            "4": "multi-family",
+            "5": "land",
+            "6": "other",
+            "7": "manufactured",
+            "8": "co-op",
+            "house": "house",
+            "condo": "condo",
+            "townhouse": "townhouse",
+            "multi-family": "multi-family",
+            "multifamily": "multi-family",
+            "land": "land",
+            "other": "other",
+            "manufactured": "manufactured",
+            "co-op": "co-op",
+            "coop": "co-op",
+        }
 
-Missing required fields:
-{json.dumps(missing_fields, indent=2)}
+        if isinstance(value, list):
+            cleaned = []
+            seen = set()
 
-Instructions:
-- Write a short natural reply.
-- Acknowledge useful information already provided.
-- Ask only for the missing required information.
-- Do not invent values.
-- Do not mention JSON, tools, schemas, validation, or internal logic.
-- Keep it conversational and concise.
-- Do not use bullet points.
+            for item in value:
+                raw = str(item).strip().lower()
+                normalized = mapping.get(item, mapping.get(raw, raw))
+                if normalized and normalized not in seen:
+                    cleaned.append(normalized)
+                    seen.add(normalized)
 
-Return only plain text.
-""".strip()
+            return cleaned
 
+        return []
 
-def build_listings_summary_prompt(current_filters: dict, listings: list[dict]) -> str:
-    return f"""
-You are a helpful real estate search assistant.
+    @field_validator("must_have", "nice_to_have", mode="before")
+    @classmethod
+    def normalize_amenity_lists(cls, value: Any) -> List[str]:
+        if value is None:
+            return []
+        if not isinstance(value, list):
+            return []
 
-The user searched with these preferences:
-{json.dumps(current_filters, indent=2)}
+        mapping = {
+            "laundry": "in_unit_laundry",
+            "washer/dryer": "in_unit_laundry",
+            "washer dryer": "in_unit_laundry",
+            "in-unit laundry": "in_unit_laundry",
+            "in unit laundry": "in_unit_laundry",
+            "cat friendly": "cat_friendly",
+            "cats allowed": "cat_friendly",
+            "dog friendly": "dog_friendly",
+            "dogs allowed": "dog_friendly",
+            "parking": "parking",
+            "gym": "gym",
+            "air conditioning": "ac",
+            "ac": "ac",
+            "elevator": "elevator",
+            "fireplace": "fireplace",
+            "waterfront": "wf",
+            "view": "view",
+            "accessible": "accessible",
+            "pets allowed": "pets_allowed",
+            "washer/dryer hookup": "wd",
+            "virtual tour": "virtual_tour",
+            "pool": "pool",
+            "garage": "garage",
+        }
 
-Here are the matching listings from the database:
-{json.dumps(listings, indent=2)}
+        cleaned = []
+        seen = set()
 
-Instructions:
-- Summarize the results naturally and conversationally.
-- Mention how many results were found.
-- Highlight a few standout properties (best price, most bedrooms, etc.).
-- Include the address and price for properties you mention.
-- If no results were found, let the user know and suggest broadening their search.
-- Do not mention JSON, SQL, databases, or internal logic.
-- Keep it concise and helpful.
-- Do not use bullet points.
+        for item in value:
+            text = str(item).strip().lower()
+            if not text:
+                continue
 
-Return only plain text.
-""".strip()
+            normalized = mapping.get(text, text.replace(" ", "_").replace("-", "_"))
+            if normalized not in seen:
+                cleaned.append(normalized)
+                seen.add(normalized)
 
+        return cleaned
 
-def build_completion_response_prompt(current_filters: dict) -> str:
-    return f"""
-You are a helpful real estate search assistant.
+    @field_validator("notes", mode="before")
+    @classmethod
+    def normalize_notes(cls, value: Any) -> List[str]:
+        if value is None:
+            return []
+        if isinstance(value, list):
+            return [str(item).strip() for item in value if str(item).strip()]
+        return []
 
-Current parsed filters:
-{json.dumps(current_filters, indent=2)}
-
-Instructions:
-- Write a short natural reply confirming that enough information has been collected.
-- Briefly summarize the most important preferences already captured.
-- Do not invent anything.
-- Do not mention JSON, tools, schemas, validation, or internal logic.
-- Keep it conversational and concise.
-- Do not use bullet points.
-
-Return only plain text.
-""".strip()
+    @field_validator("move_in", mode="before")
+    @classmethod
+    def normalize_move_in(cls, value: Any) -> Any:
+        if value is None or value == "":
+            return None
+        return value
