@@ -22,14 +22,12 @@ def _format_baths(value: float | None) -> str | None:
 
 def build_api_params_tool(filters: HousingFilters) -> dict:
     type_map = {
-        "house": "1",
-        "condo": "2",
-        "townhouse": "3",
+        "house": "6",
+        "condo": "3",
+        "townhouse": "13",
         "multi-family": "4",
-        "land": "5",
-        "other": "6",
-        "manufactured": "7",
-        "co-op": "8",
+        "land": "8",
+        "other": "10",
     }
 
     boolean_filter_map = {
