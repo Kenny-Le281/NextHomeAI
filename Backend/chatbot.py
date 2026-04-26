@@ -2,6 +2,7 @@ import json
 
 from agent.agent_orchestrator import run_agent
 from models.housing_filters import HousingFilters
+from models.booking_request import BookingRequest
 from models.session_context import SessionContext, SessionMessage
 
 
@@ -12,6 +13,7 @@ def run_listing_chatbot() -> None:
     print()
 
     current_filters = HousingFilters()
+    current_booking = BookingRequest()
     current_context = SessionContext(
         conversation_history=[
             SessionMessage(role="assistant", content=opening_message)
@@ -35,6 +37,7 @@ def run_listing_chatbot() -> None:
                 user_input=user_input,
                 current_filters=current_filters,
                 current_context=current_context,
+                current_booking=current_booking,
             )
         except Exception as exception:
             print(f"Bot: I ran into a problem: {exception}")
@@ -43,6 +46,7 @@ def run_listing_chatbot() -> None:
 
         current_filters = result["filters"]
         current_context = result["context"]
+        current_booking = result["booking"]
 
         assistant_reply = result["reply"]
         current_context.conversation_history.append(
@@ -54,6 +58,10 @@ def run_listing_chatbot() -> None:
 
         print("=== CURRENT FILTER OBJECT ===")
         print(json.dumps(current_filters.model_dump(mode="json"), indent=2))
+        print()
+
+        print("=== CURRENT BOOKING OBJECT ===")
+        print(json.dumps(current_booking.model_dump(mode="json"), indent=2))
         print()
 
         print("=== CURRENT CONTEXT ===")
