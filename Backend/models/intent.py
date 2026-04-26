@@ -8,6 +8,9 @@ IntentType = Literal[
     "general_question",
     "conversation",
     "confirm_search",
+    "start_booking",
+    "provide_booking_info",
+    "confirm_booking",
     "end_chat",
 ]
 

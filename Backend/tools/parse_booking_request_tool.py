@@ -4,8 +4,8 @@ import re
 from pydantic import ValidationError
 
 from llm.ollama_client import call_ollama
-from llm.prompts import build_intent_classifier_prompt
-from models.intent import IntentResult
+from llm.prompts import build_booking_parser_prompt
+from models.booking_request import BookingParseResult
 
 
 def extract_json_text(text: str) -> str:
@@ -24,19 +24,21 @@ def extract_json_text(text: str) -> str:
     return text[start:end + 1].strip()
 
 
-def classify_intent_tool(
+def parse_booking_request_tool(
     user_message: str,
-    current_filters: dict,
-    current_context: dict,
     current_booking: dict,
-) -> IntentResult:
-    prompt = build_intent_classifier_prompt(
+    current_context: dict,
+) -> BookingParseResult:
+    prompt = build_booking_parser_prompt(
         user_message=user_message,
-        current_filters=current_filters,
-        current_context=current_context,
         current_booking=current_booking,
+        current_context=current_context,
     )
     llm_output = call_ollama(prompt)
+
+    print("=== BOOKING USER MESSAGE ===")
+    print(user_message)
+    print()
 
     print("=== RAW LLM OUTPUT ===")
     print(llm_output)
@@ -50,16 +52,16 @@ def classify_intent_tool(
 
     try:
         parsed_json = json.loads(clean_output)
-    except json.JSONDecodeError:
-        return IntentResult(
-            intent="conversation",
-            reason="Failed to parse classifier output; defaulted to conversation."
+    except json.JSONDecodeError as exception:
+        return BookingParseResult(
+            wants_to_book=False,
+            notes=[f"LLM output was not valid JSON: {exception}"]
         )
 
     try:
-        return IntentResult.model_validate(parsed_json)
-    except ValidationError:
-        return IntentResult(
-            intent="conversation",
-            reason="Classifier output failed validation; defaulted to conversation."
+        return BookingParseResult.model_validate(parsed_json)
+    except ValidationError as exception:
+        return BookingParseResult(
+            wants_to_book=False,
+            notes=[f"Validation failed: {exception}"]
         )
