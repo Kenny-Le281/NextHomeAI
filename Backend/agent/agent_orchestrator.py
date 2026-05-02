@@ -28,10 +28,8 @@ from services.booking_state_service import (
     set_awaiting_final_booking_confirmation_service,
     clear_awaiting_final_booking_confirmation_service,
 )
-from services.listing_selection_service import find_listing_for_booking_service
-from tools.search_listings_tool import search_listings_tool
 from tools.book_showing_tool import book_showing_tool
-
+from services.listing_selection_service import find_listing_for_booking_service
 
 def _search_and_respond(filters: HousingFilters) -> dict:
     """Query the DB with the collected filters and build a response."""
@@ -171,7 +169,6 @@ def run_agent(
         updated_context.active_flow = "search"
 
         if has_required_info_service(updated_filters):
-            listings = search_listings_tool(updated_filters)
             updated_context.latest_listings = listings
             updated_context.last_question_type = None
 
@@ -212,7 +209,7 @@ def run_agent(
         updated_context.active_flow = "search"
 
         if has_required_info_service(current_filters):
-            listings = search_listings_tool(current_filters)
+            listings = None
             updated_context.latest_listings = listings
             updated_context.last_question_type = None
 
@@ -337,16 +334,10 @@ def run_agent(
                 updated_booking = set_awaiting_listing_confirmation_service(updated_booking)
                 updated_context.last_question_type = "booking_confirmation"
 
-                if source == "latest_listings":
-                    reply = (
-                        f"I couldn't find an exact match in the listings I most recently showed you. "
-                        f"Did you mean {candidate['address_name']}? Please reply yes or no."
-                    )
-                else:
-                    reply = (
-                        f"I couldn't find an exact match in the recent results, but I found a close match in the database: "
-                        f"{candidate['address_name']}. Did you mean this address? Please reply yes or no."
-                    )
+                reply = (
+                    "I couldn't find an exact match in the listings I most recently showed you. "
+                    f"Did you mean {candidate['address_name']}? Please reply yes or no."
+                )
 
                 return {
                     "reply": reply,
@@ -363,8 +354,8 @@ def run_agent(
 
                 return {
                     "reply": (
-                        "I couldn't match that address in either the recent listings or the database. "
-                        "Please give the full property address."
+                        "I couldn't match that address in the listings I most recently showed you. "
+                        "Please give the full property address, or search for the listing again first."
                     ),
                     "filters": current_filters,
                     "context": updated_context,

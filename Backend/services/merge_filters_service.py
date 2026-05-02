@@ -1,49 +1,67 @@
 from models.housing_filters import HousingFilters
 
 
-def merge_filters_service(old: HousingFilters, new: HousingFilters) -> HousingFilters:
-    merged = old.model_dump(mode="python")
+def merge_filters(old: HousingFilters, new: HousingFilters) -> HousingFilters:
+    merged_data = old.model_dump(mode="python")
 
-    if new.address_name is not None:
-        merged["address_name"] = new.address_name
+    if new.location.city.strip():
+        merged_data["location"]["city"] = new.location.city
 
-    if new.city is not None:
-        merged["city"] = new.city
+    if new.location.region_id:
+        merged_data["location"]["region_id"] = new.location.region_id
 
-    if new.state is not None:
-        merged["state"] = new.state
+    if new.location.radius_km is not None:
+        merged_data["location"]["radius_km"] = new.location.radius_km
 
-    if new.zip is not None:
-        merged["zip"] = new.zip
+    if new.location.neighborhoods:
+        existing = merged_data["location"]["neighborhoods"]
+        combined = existing + new.location.neighborhoods
+        deduped = []
+        seen = set()
+        for item in combined:
+            key = item.lower()
+            if key not in seen:
+                deduped.append(item)
+                seen.add(key)
+        merged_data["location"]["neighborhoods"] = deduped
 
-    if new.location_text is not None:
-        merged["location_text"] = new.location_text
+    if new.price.min is not None:
+        merged_data["price"]["min"] = new.price.min
 
-    if new.property_type is not None:
-        merged["property_type"] = new.property_type
+    if new.price.max is not None:
+        merged_data["price"]["max"] = new.price.max
+
+    if new.price.currency:
+        merged_data["price"]["currency"] = new.price.currency
 
     if new.beds_min is not None:
-        merged["beds_min"] = new.beds_min
+        merged_data["beds_min"] = new.beds_min
+
+    if new.beds_max is not None:
+        merged_data["beds_max"] = new.beds_max
 
     if new.baths_min is not None:
-        merged["baths_min"] = new.baths_min
+        merged_data["baths_min"] = new.baths_min
 
-    if new.price_min is not None:
-        merged["price_min"] = new.price_min
+    if new.baths_max is not None:
+        merged_data["baths_max"] = new.baths_max
 
-    if new.price_max is not None:
-        merged["price_max"] = new.price_max
+    if new.move_in is not None:
+        merged_data["move_in"] = new.move_in
 
-    if new.days_on_market_max is not None:
-        merged["days_on_market_max"] = new.days_on_market_max
+    if new.min_sqft is not None:
+        merged_data["min_sqft"] = new.min_sqft
 
-    if new.time_on_redfin is not None:
-        merged["time_on_redfin"] = new.time_on_redfin
+    if new.min_lot_size is not None:
+        merged_data["min_lot_size"] = new.min_lot_size
 
-    if new.hoa_amount_max is not None:
-        merged["hoa_amount_max"] = new.hoa_amount_max
+    merged_data["property_types"] = sorted(list(set(merged_data["property_types"] + new.property_types)))
+
+    merged_data["must_have"] = sorted(list(set(merged_data["must_have"] + new.must_have)))
+
+    merged_data["nice_to_have"] = sorted(list(set(merged_data["nice_to_have"] + new.nice_to_have)))
 
     if new.notes:
-        merged["notes"] = merged["notes"] + new.notes
+        merged_data["notes"] = merged_data["notes"] + new.notes
 
-    return HousingFilters.model_validate(merged)
+    return HousingFilters.model_validate(merged_data)
