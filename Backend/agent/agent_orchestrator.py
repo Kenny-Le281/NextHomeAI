@@ -346,14 +346,27 @@ def run_agent(
 
             elif match_result["status"] == "candidate":
                 candidate = match_result["listing"]
+                source = match_result.get("source")
 
                 updated_booking = set_awaiting_listing_confirmation_service(updated_booking)
                 updated_context.last_question_type = "booking_confirmation"
 
-                reply = (
-                    "I couldn't find an exact match in the listings I most recently showed you. "
-                    f"Did you mean {candidate['address_name']}? Please reply yes or no."
-                )
+                if source == "latest_listings":
+                    reply = (
+                        "I couldn't find an exact match in the listings I most recently showed you. "
+                        f"Did you mean {candidate['address_name']}? Please reply yes or no."
+                    )
+                elif source == "database":
+                    reply = (
+                        "I couldn't find an exact match in the listings I most recently showed you, "
+                        "but I found a close match in the database. "
+                        f"Did you mean {candidate['address_name']}? Please reply yes or no."
+                    )
+                else:
+                    reply = (
+                        f"I found a close match: {candidate['address_name']}. "
+                        "Did you mean this address? Please reply yes or no."
+                    )
 
                 return {
                     "reply": reply,
@@ -371,8 +384,8 @@ def run_agent(
 
                 return {
                     "reply": (
-                        "I couldn't match that address in the listings I most recently showed you. "
-                        "Please give the full property address, or search for the listing again first."
+                        "I couldn't match that address in the listings or database. "
+                        "Please give the full property address."
                     ),
                     "filters": current_filters,
                     "context": updated_context,

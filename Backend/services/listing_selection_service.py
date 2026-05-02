@@ -1,6 +1,8 @@
 import re
 from difflib import get_close_matches
 
+from tools.query_listings_tool import query_listing_by_address
+
 
 def _normalize_address(text: str) -> str:
     text = text.lower().strip()
@@ -10,6 +12,10 @@ def _normalize_address(text: str) -> str:
     text = text.replace("drive", "dr")
     text = text.replace("boulevard", "blvd")
     text = text.replace("court", "ct")
+    text = text.replace("crescent", "cres")
+    text = text.replace("terrace", "terr")
+    text = text.replace("lane", "ln")
+    text = text.replace("place", "pl")
     text = re.sub(r"[^a-z0-9\s]", "", text)
     text = re.sub(r"\s+", " ", text).strip()
     return text
@@ -17,11 +23,20 @@ def _normalize_address(text: str) -> str:
 
 def _match_against_listings(
     address_query: str,
-    listings: list[dict],
+    listings: list[dict] | None,
     cutoff: float = 0.72,
 ) -> dict:
-    if not address_query or not listings:
-        return {"status": "none", "listing": None}
+    if not address_query or not address_query.strip():
+        return {
+            "status": "none",
+            "listing": None,
+        }
+
+    if not listings:
+        return {
+            "status": "none",
+            "listing": None,
+        }
 
     normalized_query = _normalize_address(address_query)
 
@@ -30,8 +45,17 @@ def _match_against_listings(
     for listing in listings:
         address = listing.get("address_name", "")
 
-        if address:
-            normalized_map[_normalize_address(address)] = listing
+        if not address:
+            continue
+
+        normalized_address = _normalize_address(address)
+        normalized_map[normalized_address] = listing
+
+    if not normalized_map:
+        return {
+            "status": "none",
+            "listing": None,
+        }
 
     if normalized_query in normalized_map:
         return {
@@ -52,36 +76,64 @@ def _match_against_listings(
             "listing": normalized_map[candidates[0]],
         }
 
-    return {"status": "none", "listing": None}
+    return {
+        "status": "none",
+        "listing": None,
+    }
 
 
 def find_listing_for_booking_service(
     address_query: str,
-    latest_listings: list[dict],
+    latest_listings: list[dict] | None,
     cutoff: float = 0.72,
 ) -> dict:
     """
-    Match a booking address against the listings most recently returned
-    by query_listings(filters).
+    Booking lookup strategy:
+
+    1. Try matching against latest_listings first.
+    2. If no match is found, query the database by address.
+    3. Match against the database candidates.
 
     Returns:
     {
         "status": "exact" | "candidate" | "none",
         "listing": dict | None,
-        "source": "latest_listings" | None
+        "source": "latest_listings" | "database" | None
     }
     """
-    match = _match_against_listings(
+    if not address_query or not address_query.strip():
+        return {
+            "status": "none",
+            "listing": None,
+            "source": None,
+        }
+
+    latest_match = _match_against_listings(
         address_query=address_query,
         listings=latest_listings,
         cutoff=cutoff,
     )
 
-    if match["status"] in {"exact", "candidate"} and match["listing"] is not None:
+    if latest_match["status"] in {"exact", "candidate"} and latest_match["listing"] is not None:
         return {
-            "status": match["status"],
-            "listing": match["listing"],
+            "status": latest_match["status"],
+            "listing": latest_match["listing"],
             "source": "latest_listings",
+        }
+
+    db_candidates = query_listing_by_address(address_query)
+
+    db_match = _match_against_listings(
+        address_query=address_query,
+        listings=db_candidates,
+        cutoff=cutoff,
+    )
+
+    if db_match["status"] in {"exact", "candidate"} and db_match["listing"] is not None:
+        return {
+            "status": db_match["status"],
+            "listing": db_match["listing"],
+            "source": "database",
         }
 
     return {
