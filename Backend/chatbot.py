@@ -72,33 +72,35 @@ def run_listing_chatbot() -> None:
         if listings is not None:
             print(f"=== MATCHING LISTINGS ({len(listings)}) ===")
 
-            if len(listings) == 0:
+            if not listings:
                 print("No listings matched the current filters.")
             else:
-                for index, listing in enumerate(listings[:5], start=1):
-                    address = listing.get("address_name", "Unknown address")
-                    city = listing.get("city", "Unknown city")
-                    price = listing.get("price", "N/A")
-                    beds = listing.get("beds", "N/A")
-                    baths = listing.get("total_baths", "N/A")
+                base_url = "https://www.redfin.ca"
 
-                    print(f"{index}. {address} | {city} | ${price} | {beds} beds | {baths} baths")
-            print()
+                property_type_labels = {
+                    3: "Condo",
+                    4: "Multi-family",
+                    6: "House",
+                    8: "Land",
+                    10: "Other",
+                    13: "Townhouse",
+                }
 
-        if result.get("listings"):
-            base_url = "https://www.redfin.ca"
-            print(f"=== MATCHING LISTINGS ({len(result['listings'])}) ===")
-            for listing in result["listings"]:
-                addr = listing.get("address_name", "Unknown")
-                price = listing.get("price")
-                beds = listing.get("beds")
-                baths = listing.get("total_baths")
-                ptype = listing.get("property_type", "")
-                url = listing.get("url", "")
-                price_str = f"${price:,}" if price else "N/A"
-                link = f"{base_url}{url}" if url else "No link"
-                print(f"  {addr} — {price_str} | {beds}bd/{baths}ba | {ptype}")
-                print(f"    {link}")
+                for listing in listings:
+                    addr = listing.get("address_name", "Unknown")
+                    price = listing.get("price")
+                    beds = listing.get("beds")
+                    baths = listing.get("total_baths")
+                    raw_type = listing.get("property_type")
+                    ptype = property_type_labels.get(raw_type, raw_type)
+                    url = listing.get("url", "")
+
+                    price_str = f"${price:,}" if price else "N/A"
+                    link = f"{base_url}{url}" if url else "No link"
+
+                    print(f"  {addr} — {price_str} | {beds}bd/{baths}ba | {ptype}")
+                    print(f"    {link}")
+
             print()
 
         if result["done"] and result["intent"] == "end_chat":

@@ -1,7 +1,7 @@
 from models.housing_filters import HousingFilters
 
 
-def merge_filters(old: HousingFilters, new: HousingFilters) -> HousingFilters:
+def merge_filters_service(old: HousingFilters, new: HousingFilters) -> HousingFilters:
     merged_data = old.model_dump(mode="python")
 
     if new.location.city.strip():

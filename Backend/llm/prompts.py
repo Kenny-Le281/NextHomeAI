@@ -11,19 +11,27 @@ def build_filter_parser_prompt(
     last_question_type = current_context.get("last_question_type")
 
     schema_example = {
-        "address_name": None,
-        "city": None,
-        "state": None,
-        "zip": None,
-        "location_text": None,
-        "property_type": None,
+        "location": {
+            "city": "",
+            "region_id": None,
+            "radius_km": None,
+            "neighborhoods": []
+        },
+        "price": {
+            "min": None,
+            "max": None,
+            "currency": "CAD"
+        },
         "beds_min": None,
+        "beds_max": None,
         "baths_min": None,
-        "price_min": None,
-        "price_max": None,
-        "days_on_market_max": None,
-        "time_on_redfin": None,
-        "hoa_amount_max": None,
+        "baths_max": None,
+        "property_types": [],
+        "must_have": [],
+        "nice_to_have": [],
+        "move_in": None,
+        "min_sqft": None,
+        "min_lot_size": None,
         "notes": []
     }
 
@@ -44,38 +52,59 @@ Current flow:
 Last question type asked by the assistant:
 {json.dumps(last_question_type)}
 
-Rules:
+Use exactly this schema:
+{json.dumps(schema_example, indent=2)}
+
+Output rules:
 - Return valid JSON only.
 - Do not include markdown.
 - Do not include triple backticks.
 - Do not include comments.
 - Do not include explanations.
-- Do not include API parameters or numeric API codes.
-- Use semantic values only.
-- Example: use "house", not 1.
-- Do not invent neighborhoods or areas not explicitly stated by the user.
-- If the user only mentions a city (e.g. "Ottawa"), leave neighborhoods as an empty list.
-- Use exactly this schema:
-{json.dumps(schema_example, indent=2)}
-
-Important:
-- Use the recent conversation and last_question_type to interpret short replies.
-- If the assistant was asking for city and the user says "Ottawa", set city="Ottawa".
-- If the assistant was asking for maximum price and the user says "600000", set price_max=600000.
-- If the assistant was asking for bedrooms and the user says "3", set beds_min=3.
-- Leave unknown values as null.
+- Do not write any text before or after the JSON object.
 - Do not invent fields.
-
-Important rules:
 - Leave unknown values as null or [].
 - Default currency to CAD unless the user clearly says otherwise.
-- "budget", "up to", "max", "under", "no more than" → set as price max.
-- "at least", "min", "starting from", "above" → set as price min.
-- Only put something in "must_have" if the user clearly says it is required, mandatory, must-have, needs, or required.
-- If the user says "would be nice", "preferred", "ideally", or similar, put it in "nice_to_have".
-- If the user gives a range like "1 or 2 bathrooms", use baths_min=1 and baths_max=2.
+- Do not include API parameters or numeric API codes.
+- Use semantic values only. Example: use "house", not 1.
 
-Normalization rules:
+Conversation context rules:
+- Use recent conversation history and last_question_type to interpret short replies.
+- If last_question_type is "city" and the user says "Ottawa", set location.city = "Ottawa".
+- If last_question_type is "price_max" and the user says "600000", set price.max = 600000.
+- If last_question_type is "beds_min" and the user says "3", set beds_min = 3.
+
+Location rules:
+- Do not invent neighborhoods or areas not explicitly stated by the user.
+- If the user only mentions a city, set location.city to that city and leave location.neighborhoods as [].
+- Never put the city itself inside location.neighborhoods.
+- Only add neighborhoods if the user mentions a specific area inside the city.
+- If the user says something like "Kanata, Ottawa", set location.city = "Ottawa" and location.neighborhoods = ["Kanata"].
+
+Price rules:
+- "budget", "up to", "max", "under", "below", "no more than" -> set price.max.
+- "at least", "min", "minimum", "starting from", "above", "over" -> set price.min.
+- If the user gives a range like "$600,000 to $1,000,000", set price.min = 600000 and price.max = 1000000.
+
+Bedroom and bathroom rules:
+- If the user says "at least 3 bedrooms", "minimum 3 bedrooms", "3+ bedrooms", "3 bed minimum", or "min 3 bedrooms", set beds_min = 3 and beds_max = null.
+- If the user says "exactly 3 bedrooms", "only 3 bedrooms", or "must be 3 bedrooms", set beds_min = 3 and beds_max = 3.
+- If the user simply says "3 bedrooms", "3 bed", or "3bd", set beds_min = 3 and beds_max = null.
+- If the user says "at least 3 bathrooms", "minimum 3 bathrooms", "3+ bathrooms", "3 bath minimum", or "min 3 bathrooms", set baths_min = 3 and baths_max = null.
+- If the user says "exactly 3 bathrooms", "only 3 bathrooms", or "must be 3 bathrooms", set baths_min = 3 and baths_max = 3.
+- If the user simply says "3 bathrooms", "3 bath", or "3ba", set baths_min = 3 and baths_max = null.
+- If the user gives a range like "1 or 2 bathrooms", set baths_min = 1 and baths_max = 2.
+
+Property type rules:
+- If the user says "house", "detached", or "single family", add "house" to property_types.
+- If the user says "condo", "apartment", or "condominium", add "condo" to property_types.
+- If the user says "townhouse", "townhome", or "row house", add "townhouse" to property_types.
+- If the user says "duplex", "triplex", or "multi-family", add "multi-family" to property_types.
+- If the user says "land" or "lot", add "land" to property_types.
+
+Amenity rules:
+- Only put something in must_have if the user clearly says it is required, mandatory, must-have, needs, or required.
+- If the user says "would be nice", "preferred", "ideally", or similar, put it in nice_to_have.
 - "laundry", "washer/dryer", "in-unit laundry" -> "in_unit_laundry"
 - "cat friendly", "cats allowed" -> "cat_friendly"
 - "dog friendly", "dogs allowed" -> "dog_friendly"
@@ -84,11 +113,12 @@ Normalization rules:
 - "air conditioning" -> "ac"
 - "pool" -> "pool"
 - "garage" -> "garage"
-- If the user says something like "Kanata, Ottawa", set city="Ottawa" and neighborhoods=["Kanata"].
+
+Other rules:
 - Convert move-in dates to YYYY-MM-DD when possible.
-- Put minimum square footage into "min_sqft".
-- Put minimum lot size into "min_lot_size".
-- If something important is unclear, add a short note in "notes".
+- Put minimum square footage into min_sqft.
+- Put minimum lot size into min_lot_size.
+- If something important is unclear, add a short note in notes.
 
 User message:
 {user_query}
@@ -331,13 +361,15 @@ Here are the matching listings from the database:
 
 Instructions:
 - Summarize the results naturally and conversationally.
-- Mention how many results were found.
+- Mention how many listings are being shown.
+- Prefer wording like "I found 20 listings to show you" or "Here are the first 20 matching listings."
 - Highlight a few standout properties (best price, most bedrooms, etc.).
 - Include the address and price for properties you mention.
 - If no results were found, let the user know and suggest broadening their search.
 - Do not mention JSON, SQL, databases, or internal logic.
 - Keep it concise and helpful.
 - Do not use bullet points.
+
 
 Return only plain text.
 """.strip()
