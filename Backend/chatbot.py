@@ -39,6 +39,22 @@ def run_listing_chatbot() -> None:
             print(json.dumps(result["api_params"], indent=2))
             print()
 
+        if result.get("listings"):
+            base_url = "https://www.redfin.ca"
+            print(f"=== MATCHING LISTINGS ({len(result['listings'])}) ===")
+            for listing in result["listings"]:
+                addr = listing.get("address_name", "Unknown")
+                price = listing.get("price")
+                beds = listing.get("beds")
+                baths = listing.get("total_baths")
+                ptype = listing.get("property_type", "")
+                url = listing.get("url", "")
+                price_str = f"${price:,}" if price else "N/A"
+                link = f"{base_url}{url}" if url else "No link"
+                print(f"  {addr} — {price_str} | {beds}bd/{baths}ba | {ptype}")
+                print(f"    {link}")
+            print()
+
         if result["done"] and result["intent"] == "end_chat":
             break
 

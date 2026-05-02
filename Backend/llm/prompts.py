@@ -42,12 +42,15 @@ Rules:
 - Use semantic values only.
 - Example: use "house", not 1.
 - Do not invent neighborhoods or areas not explicitly stated by the user.
+- If the user only mentions a city (e.g. "Ottawa"), leave neighborhoods as an empty list.
 - Use exactly this schema:
 {json.dumps(schema_example, indent=2)}
 
 Important rules:
 - Leave unknown values as null or [].
 - Default currency to CAD unless the user clearly says otherwise.
+- "budget", "up to", "max", "under", "no more than" → set as price max.
+- "at least", "min", "starting from", "above" → set as price min.
 - Only put something in "must_have" if the user clearly says it is required, mandatory, must-have, needs, or required.
 - If the user says "would be nice", "preferred", "ideally", or similar, put it in "nice_to_have".
 - If the user gives a range like "1 or 2 bathrooms", use baths_min=1 and baths_max=2.
@@ -168,6 +171,30 @@ Instructions:
 - Do not invent values.
 - Do not mention JSON, tools, schemas, validation, or internal logic.
 - Keep it conversational and concise.
+- Do not use bullet points.
+
+Return only plain text.
+""".strip()
+
+
+def build_listings_summary_prompt(current_filters: dict, listings: list[dict]) -> str:
+    return f"""
+You are a helpful real estate search assistant.
+
+The user searched with these preferences:
+{json.dumps(current_filters, indent=2)}
+
+Here are the matching listings from the database:
+{json.dumps(listings, indent=2)}
+
+Instructions:
+- Summarize the results naturally and conversationally.
+- Mention how many results were found.
+- Highlight a few standout properties (best price, most bedrooms, etc.).
+- Include the address and price for properties you mention.
+- If no results were found, let the user know and suggest broadening their search.
+- Do not mention JSON, SQL, databases, or internal logic.
+- Keep it concise and helpful.
 - Do not use bullet points.
 
 Return only plain text.
