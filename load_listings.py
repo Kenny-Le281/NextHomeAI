@@ -42,6 +42,8 @@ def normalize_listing(raw):
         "total_baths": raw.get("totalBaths"),
         "latitude": raw.get("latitude"),
         "longitude": raw.get("longitude"),
+        "parsed_image_urls": json.dumps(raw.get("parsed_image_urls")) if raw.get("parsed_image_urls") is not None else None,
+        "parsed_sqft": raw.get("parsed_sqft"),
         "raw": json.dumps(raw),
     }
 
@@ -51,13 +53,13 @@ INSERT INTO listings (
     listing_id, property_id, address_name, city, state, zip, location,
     url, property_type, beds, baths, price, days_on_market, time_on_redfin,
     listing_added_date, hoa_amount, brokers, last_sold_date, partial_baths,
-    full_baths, total_baths, latitude, longitude, raw
+    full_baths, total_baths, latitude, longitude, image_urls, sqft, raw
 )
 VALUES (
     %(listing_id)s, %(property_id)s, %(address_name)s, %(city)s, %(state)s, %(zip)s, %(location)s,
     %(url)s, %(property_type)s, %(beds)s, %(baths)s, %(price)s, %(days_on_market)s, %(time_on_redfin)s,
     %(listing_added_date)s, %(hoa_amount)s, %(brokers)s, %(last_sold_date)s, %(partial_baths)s,
-    %(full_baths)s, %(total_baths)s, %(latitude)s, %(longitude)s, %(raw)s
+    %(full_baths)s, %(total_baths)s, %(latitude)s, %(longitude)s, %(parsed_image_urls)s, %(parsed_sqft)s, %(raw)s
 )
 ON CONFLICT (listing_id)
 DO UPDATE SET
@@ -83,6 +85,8 @@ DO UPDATE SET
     total_baths = EXCLUDED.total_baths,
     latitude = EXCLUDED.latitude,
     longitude = EXCLUDED.longitude,
+    image_urls = EXCLUDED.image_urls,
+    sqft = EXCLUDED.sqft,
     raw = EXCLUDED.raw,
     last_updated = NOW();
 """
