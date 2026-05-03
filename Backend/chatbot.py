@@ -106,7 +106,4 @@ def run_listing_chatbot() -> None:
         if result["done"] and result["intent"] == "end_chat":
             break
 
-
-if __name__ == "__main__":
-    run_listing_chatbot()
 run_listing_chatbot()

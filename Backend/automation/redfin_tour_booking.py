@@ -93,13 +93,13 @@ def _click_next(page):
 
     print("Clicked Next")
 
-def _virtual_tour_option(page):
+def _select_virtual_tour_option(page):
 
     page.get_by_role("option", name="Video tour").click()
 
     print("Selected virtual tour")
 
-def _verification_code(page):
+def _skip_verification_code(page):
 
     page.get_by_role("button", name="Can't receive a text?").click()
 
@@ -234,7 +234,7 @@ def submit_redfin_tour_request(booking: BookingRequest, headless: bool = False,)
             _select_time_if_available(page, booking.preferred_time)
 
             if booking.virtual_tour:
-                _virtual_tour_option(page)
+                _select_virtual_tour_option(page)
 
             _click_next(page)
 
@@ -246,7 +246,7 @@ def submit_redfin_tour_request(booking: BookingRequest, headless: bool = False,)
 
             _click_next(page)
 
-            _verification_code(page)
+            _skip_verification_code(page)
 
             page.wait_for_timeout(5000)
             
