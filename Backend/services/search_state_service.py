@@ -2,7 +2,7 @@ from typing import List
 from models.housing_filters import HousingFilters
 
 
-def has_required_info(filters: HousingFilters) -> bool:
+def has_required_info_service(filters: HousingFilters) -> bool:
     return (
         bool(filters.location.city.strip())
         and filters.price.max is not None
@@ -10,7 +10,7 @@ def has_required_info(filters: HousingFilters) -> bool:
     )
 
 
-def get_missing_fields(filters: HousingFilters) -> List[str]:
+def get_missing_fields_service(filters: HousingFilters) -> List[str]:
     missing = []
 
     if not filters.location.city.strip():

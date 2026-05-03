@@ -3,8 +3,10 @@ import json
 import os
 
 API_HOST = "redfin-canada.p.rapidapi.com"
-API_KEY = "190a6ed5b8mshbe58323ae965f75p10774djsnde2c1a93eb6b"
+API_KEY = os.getenv("REDFIN_KEY")
 
+if not API_KEY:
+    raise RuntimeError("Missing RAPIDAPI_KEY in .env")
 
 def fetch_properties_for_region(region_id, output_dir):
     """Fetch sale listings for a region and save the raw JSON to output_dir."""

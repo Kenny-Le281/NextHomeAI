@@ -104,3 +104,43 @@ def query_listings(filters: HousingFilters, limit: int = 20) -> list[dict]:
     conn.close()
 
     return results
+
+
+def query_listing_by_address(address_query: str, limit: int = 10) -> list[dict]:
+    if not address_query or not address_query.strip():
+        return []
+
+    sql = """
+        SELECT listing_id, property_id, address_name, city, state, zip,
+               url, property_type, beds, baths, price, total_baths,
+               days_on_market, latitude, longitude, hoa_amount
+        FROM listings
+        WHERE address_name ILIKE %s
+        ORDER BY price ASC
+        LIMIT %s
+    """
+
+    params = [f"%{address_query.strip()}%", limit]
+
+    conn = get_db_connection()
+    cur = conn.cursor()
+    cur.execute(sql, params)
+
+    columns = [desc[0] for desc in cur.description]
+    results = []
+
+    for row in cur.fetchall():
+        record = {}
+
+        for col, val in zip(columns, row):
+            if hasattr(val, "as_tuple"):
+                record[col] = float(val)
+            else:
+                record[col] = val
+
+        results.append(record)
+
+    cur.close()
+    conn.close()
+
+    return results

@@ -140,32 +140,48 @@ class HousingFilters(BaseModel):
             return []
 
         mapping = {
-            1: "house",
-            2: "condo",
-            3: "townhouse",
-            4: "multi-family",
-            5: "land",
-            6: "other",
-            7: "manufactured",
-            8: "co-op",
-            "1": "house",
-            "2": "condo",
-            "3": "townhouse",
-            "4": "multi-family",
-            "5": "land",
-            "6": "other",
-            "7": "manufactured",
-            "8": "co-op",
             "house": "house",
+            "detached": "house",
+            "single family": "house",
+            "single-family": "house",
+            "semi detached": "house",
+            "semi-detached": "house",
+
             "condo": "condo",
+            "apartment": "condo",
+            "condominium": "condo",
+
             "townhouse": "townhouse",
+            "townhome": "townhouse",
+            "row house": "townhouse",
+            "rowhouse": "townhouse",
+
             "multi-family": "multi-family",
             "multifamily": "multi-family",
+            "duplex": "multi-family",
+            "triplex": "multi-family",
+
             "land": "land",
+            "lot": "land",
+
             "other": "other",
             "manufactured": "manufactured",
+            "mobile home": "manufactured",
             "co-op": "co-op",
             "coop": "co-op",
+
+            3: "condo",
+            4: "multi-family",
+            6: "house",
+            8: "land",
+            10: "other",
+            13: "townhouse",
+            "3": "condo",
+            "4": "multi-family",
+            "6": "house",
+            "8": "land",
+            "10": "other",
+            "13": "townhouse",
         }
 
         if isinstance(value, list):
@@ -174,7 +190,8 @@ class HousingFilters(BaseModel):
 
             for item in value:
                 raw = str(item).strip().lower()
-                normalized = mapping.get(item, mapping.get(raw, raw))
+                normalized = mapping.get(item, mapping.get(raw))
+
                 if normalized and normalized not in seen:
                     cleaned.append(normalized)
                     seen.add(normalized)

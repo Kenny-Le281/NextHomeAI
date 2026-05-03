@@ -1,22 +1,29 @@
-from datetime import datetime, UTC
-from typing import Any
+from models.housing_filters import HousingFilters
+from models.session_context import SessionContext
 
 
-temp_session: dict[str, Any] = {
-    "raw_user_query": None,
-    "parsed_filters": None,
-    "timestamp": None,
+session_store = {
+    "filters": HousingFilters(),
+    "context": SessionContext(),
 }
 
 
-def save_raw_query(user_query: str) -> None:
-    temp_session["raw_user_query"] = user_query
-    temp_session["timestamp"] = datetime.now(UTC).isoformat()
+def get_filters() -> HousingFilters:
+    return session_store["filters"]
 
 
-def save_parsed_filters(filters_dict: dict) -> None:
-    temp_session["parsed_filters"] = filters_dict
+def set_filters(filters: HousingFilters) -> None:
+    session_store["filters"] = filters
 
 
-def get_session() -> dict[str, Any]:
-    return temp_session
+def get_context() -> SessionContext:
+    return session_store["context"]
+
+
+def set_context(context: SessionContext) -> None:
+    session_store["context"] = context
+
+
+def reset_session() -> None:
+    session_store["filters"] = HousingFilters()
+    session_store["context"] = SessionContext()
