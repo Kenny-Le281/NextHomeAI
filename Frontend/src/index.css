@@ -78,3 +78,73 @@ a {
 #root {
   min-height: 100vh;
 }
+
+/* Accessibility settings */
+
+html[data-font-size="large"] {
+  font-size: 18px;
+}
+
+html[data-font-size="extra-large"] {
+  font-size: 20px;
+}
+
+html[data-font-style="readable"] {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+html[data-font-style="dyslexia-friendly"] {
+  font-family: "Trebuchet MS", Verdana, Arial, sans-serif;
+  letter-spacing: 0.025em;
+  word-spacing: 0.08em;
+  line-height: 1.7;
+}
+
+html[data-high-contrast="true"] {
+  --bg: #ffffff;
+  --bg-soft: #ffffff;
+  --surface: #ffffff;
+  --surface-soft: #f8fafc;
+  --text: #000000;
+  --text-strong: #000000;
+  --text-muted: #1f2937;
+  --border: #000000;
+  --border-strong: #000000;
+  --accent: #0000ee;
+  --accent-strong: #0000aa;
+  --accent-soft: #e0e7ff;
+  --accent-text: #000000;
+  --button-bg: #000000;
+  --button-text: #ffffff;
+  --assistant-bubble: #ffffff;
+  --shadow: rgba(0, 0, 0, 0.18);
+}
+
+html[data-theme="dark"][data-high-contrast="true"] {
+  --bg: #000000;
+  --bg-soft: #000000;
+  --surface: #000000;
+  --surface-soft: #111111;
+  --text: #ffffff;
+  --text-strong: #ffffff;
+  --text-muted: #f3f4f6;
+  --border: #ffffff;
+  --border-strong: #ffffff;
+  --accent: #ffff00;
+  --accent-strong: #ffff66;
+  --accent-soft: #1f2937;
+  --accent-text: #ffffff;
+  --button-bg: #ffffff;
+  --button-text: #000000;
+  --assistant-bubble: #111111;
+  --shadow: rgba(255, 255, 255, 0.18);
+}
+
+html[data-reduced-motion="true"] *,
+html[data-reduced-motion="true"] *::before,
+html[data-reduced-motion="true"] *::after {
+  animation-duration: 0.01ms !important;
+  animation-iteration-count: 1 !important;
+  scroll-behavior: auto !important;
+  transition-duration: 0.01ms !important;
+}

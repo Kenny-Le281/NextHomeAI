@@ -30,9 +30,9 @@ function Navbar() {
           Settings
         </NavLink>
 
-        <a className="nav-link" href="#about">
+        <NavLink to="/about" className="nav-link">
           About
-        </a>
+        </NavLink>
 
         <button type="button" className="theme-toggle" onClick={toggleTheme}>
           {theme === "light" ? "Dark mode" : "Light mode"}
