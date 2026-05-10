@@ -1,0 +1,8 @@
+fastapi
+uvicorn
+python-multipart
+pydantic
+python-dotenv
+requests
+psycopg2-binary
+playwright

@@ -1,16 +1,125 @@
-# React + Vite
+# NextHomeAI Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is the React frontend for NextHomeAI. It provides the chat interface, listing cards, listing details page, settings page, and about page.
 
-Currently, two official plugins are available:
+## Setup
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Install dependencies:
 
-## React Compiler
+```bash
+npm install
+```
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Create a `.env` file inside `Frontend/`:
 
-## Expanding the ESLint configuration
+```env
+VITE_API_BASE_URL=http://localhost:8000
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Run the development server:
+
+```bash
+npm run dev
+```
+
+The app should run at:
+
+```text
+http://localhost:5173
+```
+
+## Backend connection
+
+The frontend sends chat messages through `src/api/agentApi.js`.
+
+Expected request:
+
+```json
+{
+  "message": "Find me a 3-bedroom home in Ottawa under $700,000",
+  "session_id": "frontend-generated-session-id"
+}
+```
+
+Expected response:
+
+```json
+{
+  "reply": "Assistant message",
+  "filters": {},
+  "context": {},
+  "booking": {},
+  "done": false,
+  "api_params": null,
+  "listings": [],
+  "intent": "provide_search_info"
+}
+```
+
+The frontend currently uses:
+
+- `reply` for assistant chat messages
+- `listings` for listing cards and details pages
+- `booking` for booking progress display
+
+## Pages
+
+### Home page
+
+The home page contains:
+
+- Hero section
+- Chat panel
+- Booking progress panel
+- Listing grid
+
+### Listing details page
+
+The details page receives the selected listing through React Router state. It can also recover saved listings from localStorage after a refresh.
+
+It displays:
+
+- Main image gallery
+- Thumbnails
+- Price
+- Address
+- Beds, baths, square footage
+- Property type
+- City, state, zip
+- HOA amount
+- Days on market
+- Last sold date
+- Coordinates
+- Description if available
+- Original Redfin/source link
+
+### Settings page
+
+The settings page is accessibility-focused only. It supports:
+
+- Larger font sizes
+- Readable / dyslexia-friendly font style
+- High contrast
+- Reduced motion
+
+### About page
+
+The about page explains the purpose of NextHomeAI and the app’s main features.
+
+## Common issues
+
+### Frontend cannot contact backend
+
+Check that the backend is running at:
+
+```text
+http://localhost:8000
+```
+
+Also confirm the frontend `.env` file contains:
+
+```env
+VITE_API_BASE_URL=http://localhost:8000
+```
+
+Restart Vite after changing `.env`.
