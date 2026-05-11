@@ -21,15 +21,15 @@ The app combines a React frontend, a Python backend, an LLM-powered agent, a Pos
 - Backend session storage by frontend session ID
 `
 ## Images
-<img width="1470" height="833" alt="Screenshot 2026-05-11 at 11 32 05 AM" src="https://github.com/user-attachments/assets/1b75bfb7-0f7b-4078-94ab-2d9586099646" style="margin-bottom: 12px;" />
-
-<img width="1470" height="833" alt="Screenshot 2026-05-11 at 11 37 30 AM" src="https://github.com/user-attachments/assets/1fc1372b-c01a-43a9-93d6-5243b181b0a5" style="margin-bottom: 12px;" />
-
-<img width="1470" height="834" alt="Screenshot 2026-05-11 at 11 40 32 AM" src="https://github.com/user-attachments/assets/dc05a147-8644-411f-8978-ec6bba07be5a" style="margin-bottom: 12px;" />
-
-<img width="1470" height="822" alt="Screenshot 2026-05-11 at 11 40 43 AM" src="https://github.com/user-attachments/assets/d36d2c9a-d9d9-4a01-804d-c422428f4e14" style="margin-bottom: 12px;" />
-
-<img width="1470" height="832" alt="Screenshot 2026-05-11 at 11 40 56 AM" src="https://github.com/user-attachments/assets/30672ebd-2f38-421c-8244-fa3547e95999" style="margin-bottom: 12px;" />
+<img width="1470" height="833" alt="Screenshot 2026-05-11 at 11 32 05 AM" src="https://github.com/user-attachments/assets/1b75bfb7-0f7b-4078-94ab-2d9586099646"/>
+<br>
+<img width="1470" height="833" alt="Screenshot 2026-05-11 at 11 37 30 AM" src="https://github.com/user-attachments/assets/1fc1372b-c01a-43a9-93d6-5243b181b0a5"/>
+<br>
+<img width="1470" height="834" alt="Screenshot 2026-05-11 at 11 40 32 AM" src="https://github.com/user-attachments/assets/dc05a147-8644-411f-8978-ec6bba07be5a"/>
+<br>
+<img width="1470" height="822" alt="Screenshot 2026-05-11 at 11 40 43 AM" src="https://github.com/user-attachments/assets/d36d2c9a-d9d9-4a01-804d-c422428f4e14"/>
+<br>
+<img width="1470" height="832" alt="Screenshot 2026-05-11 at 11 40 56 AM" src="https://github.com/user-attachments/assets/30672ebd-2f38-421c-8244-fa3547e95999"/>
 
 
 ## Environment variables
