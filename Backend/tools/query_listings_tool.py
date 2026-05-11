@@ -76,7 +76,7 @@ def query_listings(filters: HousingFilters, limit: int = 20) -> list[dict]:
     sql = f"""
         SELECT listing_id, property_id, address_name, city, state, zip,
                url, property_type, beds, baths, price, total_baths,
-               days_on_market, latitude, longitude, hoa_amount
+               days_on_market, latitude, longitude, hoa_amount, last_sold_date, image_urls, sqft
         FROM listings
         WHERE {where_clause}
         ORDER BY price ASC
@@ -92,12 +92,18 @@ def query_listings(filters: HousingFilters, limit: int = 20) -> list[dict]:
     results = []
     for row in cur.fetchall():
         record = {}
+
         for col, val in zip(columns, row):
-            # Convert Decimal to float for JSON serialization
-            if hasattr(val, 'as_tuple'):  # Decimal check
+            if hasattr(val, "as_tuple"):
                 record[col] = float(val)
+            elif col == "image_urls" and isinstance(val, str):
+                try:
+                    record[col] = json.loads(val)
+                except json.JSONDecodeError:
+                    record[col] = []
             else:
                 record[col] = val
+
         results.append(record)
 
     cur.close()
@@ -113,7 +119,7 @@ def query_listing_by_address(address_query: str, limit: int = 10) -> list[dict]:
     sql = """
         SELECT listing_id, property_id, address_name, city, state, zip,
                url, property_type, beds, baths, price, total_baths,
-               days_on_market, latitude, longitude, hoa_amount
+               days_on_market, latitude, longitude, hoa_amount, last_sold_date, image_urls, sqft
         FROM listings
         WHERE address_name ILIKE %s
         ORDER BY price ASC
