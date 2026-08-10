@@ -3,7 +3,7 @@ import re
 
 from pydantic import ValidationError
 
-from llm.ollama_client import call_ollama
+from llm.openai_client import call_llm
 from llm.prompts import build_filter_parser_prompt
 from models.housing_filters import HousingFilters
 
@@ -34,7 +34,7 @@ def parse_filters_tool(
         current_filters=current_filters,
         current_context=current_context,
     )
-    llm_output = call_ollama(prompt)
+    llm_output = call_llm(prompt)
 
     print("=== USER QUERY ===")
     print(user_query)

@@ -3,6 +3,8 @@ uvicorn
 python-multipart
 pydantic
 python-dotenv
+openai
 requests
+beautifulsoup4
 psycopg2-binary
 playwright

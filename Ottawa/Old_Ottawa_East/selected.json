@@ -29,7 +29,17 @@
     "fullBaths": 2,
     "totalBaths": 2.0,
     "latitude": 47.6292296,
-    "longitude": -122.3205378
+    "longitude": -122.3205378,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "51290",
@@ -61,7 +71,17 @@
     "fullBaths": 1,
     "totalBaths": 1.0,
     "latitude": 47.6363007,
-    "longitude": -122.370738
+    "longitude": -122.370738,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "303521",
@@ -94,7 +114,17 @@
     "fullBaths": 3,
     "totalBaths": 3.5,
     "latitude": 47.6583697,
-    "longitude": -122.3482691
+    "longitude": -122.3482691,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "41992",
@@ -127,7 +157,17 @@
     "fullBaths": 1,
     "totalBaths": 1.0,
     "latitude": 47.6183132,
-    "longitude": -122.3249398
+    "longitude": -122.3249398,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "103961677",
@@ -160,7 +200,17 @@
     "fullBaths": 1,
     "totalBaths": 1.5,
     "latitude": 47.6154302,
-    "longitude": -122.3516091
+    "longitude": -122.3516091,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "109479389",
@@ -193,7 +243,17 @@
     "fullBaths": 1,
     "totalBaths": 1.5,
     "latitude": 47.6132931,
-    "longitude": -122.3218444
+    "longitude": -122.3218444,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "100638",
@@ -226,7 +286,17 @@
     "fullBaths": 2,
     "totalBaths": 2.0,
     "latitude": 47.695822,
-    "longitude": -122.3650719
+    "longitude": -122.3650719,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "169921",
@@ -259,7 +329,17 @@
     "fullBaths": 2,
     "totalBaths": 2.0,
     "latitude": 47.5686085,
-    "longitude": -122.3164825
+    "longitude": -122.3164825,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "45716",
@@ -292,7 +372,17 @@
     "fullBaths": 2,
     "totalBaths": 2.0,
     "latitude": 47.6388518,
-    "longitude": -122.3427305
+    "longitude": -122.3427305,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "167539",
@@ -325,7 +415,17 @@
     "fullBaths": 2,
     "totalBaths": 2.0,
     "latitude": 47.5725878,
-    "longitude": -122.3131229
+    "longitude": -122.3131229,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "159138",
@@ -358,7 +458,17 @@
     "fullBaths": 2,
     "totalBaths": 2.5,
     "latitude": 47.5643688,
-    "longitude": -122.3658142
+    "longitude": -122.3658142,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "158466",
@@ -391,7 +501,17 @@
     "fullBaths": 2,
     "totalBaths": 2.0,
     "latitude": 47.5266189,
-    "longitude": -122.3917999
+    "longitude": -122.3917999,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "21616520",
@@ -424,7 +544,17 @@
     "fullBaths": 1,
     "totalBaths": 1.0,
     "latitude": 47.6224387,
-    "longitude": -122.3401218
+    "longitude": -122.3401218,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "201248169",
@@ -457,7 +587,17 @@
     "fullBaths": 3,
     "totalBaths": 3.5,
     "latitude": 47.5746869,
-    "longitude": -122.4111201
+    "longitude": -122.4111201,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "132214",
@@ -490,7 +630,17 @@
     "fullBaths": 3,
     "totalBaths": 3.0,
     "latitude": 47.6273277,
-    "longitude": -122.3483073
+    "longitude": -122.3483073,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "330280",
@@ -523,7 +673,17 @@
     "fullBaths": 3,
     "totalBaths": 3.0,
     "latitude": 47.5768972,
-    "longitude": -122.3970113
+    "longitude": -122.3970113,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "101526",
@@ -556,7 +716,17 @@
     "fullBaths": 1,
     "totalBaths": 1.0,
     "latitude": 47.6939799,
-    "longitude": -122.3591003
+    "longitude": -122.3591003,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "28622689",
@@ -589,7 +759,17 @@
     "fullBaths": 2,
     "totalBaths": 2.0,
     "latitude": 47.5701248,
-    "longitude": -122.2879351
+    "longitude": -122.2879351,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "132776",
@@ -622,7 +802,17 @@
     "fullBaths": 2,
     "totalBaths": 2.0,
     "latitude": 47.629461,
-    "longitude": -122.3525248
+    "longitude": -122.3525248,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "28624007",
@@ -655,7 +845,17 @@
     "fullBaths": 2,
     "totalBaths": 2.0,
     "latitude": 47.618062,
-    "longitude": -122.339141
+    "longitude": -122.339141,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "12312848",
@@ -683,7 +883,17 @@
     "fullBaths": 1,
     "totalBaths": 1.5,
     "latitude": 47.5924421,
-    "longitude": -122.3017307
+    "longitude": -122.3017307,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "201264174",
@@ -714,7 +924,17 @@
     "fullBaths": 2,
     "totalBaths": 2.5,
     "latitude": 47.6304561,
-    "longitude": -122.3223277
+    "longitude": -122.3223277,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "310365",
@@ -745,7 +965,17 @@
     "fullBaths": 1,
     "totalBaths": 1.0,
     "latitude": 47.6818491,
-    "longitude": -122.306439
+    "longitude": -122.306439,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "173173904",
@@ -776,7 +1006,17 @@
     "fullBaths": 2,
     "totalBaths": 2.5,
     "latitude": 47.6470762,
-    "longitude": -122.3597248
+    "longitude": -122.3597248,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "44657833",
@@ -807,7 +1047,17 @@
     "fullBaths": 3,
     "totalBaths": 3.0,
     "latitude": 47.511419,
-    "longitude": -122.2563796
+    "longitude": -122.2563796,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "175699822",
@@ -838,7 +1088,17 @@
     "fullBaths": 3,
     "totalBaths": 3.0,
     "latitude": 47.6106852,
-    "longitude": -122.3406126
+    "longitude": -122.3406126,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "70203",
@@ -869,7 +1129,17 @@
     "fullBaths": 2,
     "totalBaths": 2.0,
     "latitude": 47.7189294,
-    "longitude": -122.3184689
+    "longitude": -122.3184689,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "24149",
@@ -900,7 +1170,17 @@
     "fullBaths": 1,
     "totalBaths": 1.0,
     "latitude": 47.5999067,
-    "longitude": -122.3350766
+    "longitude": -122.3350766,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "113366",
@@ -931,7 +1211,17 @@
     "fullBaths": 3,
     "totalBaths": 3.0,
     "latitude": 47.7007752,
-    "longitude": -122.289209
+    "longitude": -122.289209,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "114115",
@@ -962,7 +1252,17 @@
     "fullBaths": 2,
     "totalBaths": 2.0,
     "latitude": 47.7255767,
-    "longitude": -122.3080457
+    "longitude": -122.3080457,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "176358929",
@@ -993,7 +1293,17 @@
     "fullBaths": 1,
     "totalBaths": 1.0,
     "latitude": 47.6002447,
-    "longitude": -122.3280012
+    "longitude": -122.3280012,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "2081765",
@@ -1024,7 +1334,17 @@
     "fullBaths": 2,
     "totalBaths": 2.5,
     "latitude": 47.6191371,
-    "longitude": -122.3052658
+    "longitude": -122.3052658,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "197671784",
@@ -1055,7 +1375,17 @@
     "fullBaths": 3,
     "totalBaths": 3.0,
     "latitude": 47.6707369,
-    "longitude": -122.3731627
+    "longitude": -122.3731627,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "162689",
@@ -1086,7 +1416,17 @@
     "fullBaths": 1,
     "totalBaths": 1.5,
     "latitude": 47.6692992,
-    "longitude": -122.3935555
+    "longitude": -122.3935555,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "17381744",
@@ -1117,7 +1457,17 @@
     "fullBaths": 2,
     "totalBaths": 2.0,
     "latitude": 47.6676476,
-    "longitude": -122.3828727
+    "longitude": -122.3828727,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "303328",
@@ -1148,7 +1498,17 @@
     "fullBaths": 2,
     "totalBaths": 2.0,
     "latitude": 47.6601675,
-    "longitude": -122.3635782
+    "longitude": -122.3635782,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "22222145",
@@ -1179,7 +1539,17 @@
     "fullBaths": 2,
     "totalBaths": 3.0,
     "latitude": 47.7073543,
-    "longitude": -122.338274
+    "longitude": -122.338274,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "191421153",
@@ -1210,7 +1580,17 @@
     "fullBaths": 2,
     "totalBaths": 2.0,
     "latitude": 47.699389,
-    "longitude": -122.347078
+    "longitude": -122.347078,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "118628",
@@ -1241,7 +1621,17 @@
     "fullBaths": 4,
     "totalBaths": 4.0,
     "latitude": 47.6561284,
-    "longitude": -122.3249235
+    "longitude": -122.3249235,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "170474482",
@@ -1272,7 +1662,17 @@
     "fullBaths": 3,
     "totalBaths": 4.0,
     "latitude": 47.6312741,
-    "longitude": -122.350902
+    "longitude": -122.350902,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "131538",
@@ -1303,7 +1703,17 @@
     "fullBaths": 1,
     "totalBaths": 1.0,
     "latitude": 47.6482632,
-    "longitude": -122.3751723
+    "longitude": -122.3751723,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "175990173",
@@ -1334,7 +1744,17 @@
     "fullBaths": 1,
     "totalBaths": 1.5,
     "latitude": 47.6032592,
-    "longitude": -122.3068907
+    "longitude": -122.3068907,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "147049743",
@@ -1365,7 +1785,17 @@
     "fullBaths": 3,
     "totalBaths": 3.5,
     "latitude": 47.6606156,
-    "longitude": -122.328447
+    "longitude": -122.328447,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "170557",
@@ -1396,7 +1826,17 @@
     "fullBaths": 2,
     "totalBaths": 2.0,
     "latitude": 47.5867237,
-    "longitude": -122.296656
+    "longitude": -122.296656,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "17447",
@@ -1427,7 +1867,17 @@
     "fullBaths": 1,
     "totalBaths": 1.5,
     "latitude": 47.726554,
-    "longitude": -122.3538573
+    "longitude": -122.3538573,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "12090532",
@@ -1458,7 +1908,17 @@
     "fullBaths": 2,
     "totalBaths": 2.5,
     "latitude": 47.5385666,
-    "longitude": -122.3671773
+    "longitude": -122.3671773,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "5770",
@@ -1489,7 +1949,17 @@
     "fullBaths": 1,
     "totalBaths": 1.5,
     "latitude": 47.6585061,
-    "longitude": -122.4017917
+    "longitude": -122.4017917,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "140245",
@@ -1520,7 +1990,17 @@
     "fullBaths": 3,
     "totalBaths": 3.5,
     "latitude": 47.6180883,
-    "longitude": -122.2836448
+    "longitude": -122.2836448,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "167099826",
@@ -1551,7 +2031,17 @@
     "fullBaths": 1,
     "totalBaths": 1.0,
     "latitude": 47.635474,
-    "longitude": -122.339785
+    "longitude": -122.339785,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "22524380",
@@ -1582,7 +2072,17 @@
     "fullBaths": 3,
     "totalBaths": 3.5,
     "latitude": 47.518896,
-    "longitude": -122.338968
+    "longitude": -122.338968,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "143794",
@@ -1613,7 +2113,17 @@
     "fullBaths": 1,
     "totalBaths": 1.0,
     "latitude": 47.6227867,
-    "longitude": -122.3027841
+    "longitude": -122.3027841,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "300745",
@@ -1644,7 +2154,17 @@
     "fullBaths": 2,
     "totalBaths": 2.0,
     "latitude": 47.687858,
-    "longitude": -122.3453263
+    "longitude": -122.3453263,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "21617307",
@@ -1675,7 +2195,17 @@
     "fullBaths": 1,
     "totalBaths": 1.5,
     "latitude": 47.6176125,
-    "longitude": -122.3523057
+    "longitude": -122.3523057,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "119364",
@@ -1706,7 +2236,17 @@
     "fullBaths": 2,
     "totalBaths": 2.0,
     "latitude": 47.6545955,
-    "longitude": -122.3438582
+    "longitude": -122.3438582,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "17769",
@@ -1737,7 +2277,17 @@
     "fullBaths": 1,
     "totalBaths": 1.0,
     "latitude": 47.6584557,
-    "longitude": -122.3162619
+    "longitude": -122.3162619,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "21882340",
@@ -1768,7 +2318,17 @@
     "fullBaths": 1,
     "totalBaths": 1.0,
     "latitude": 47.648332548,
-    "longitude": -122.3232847
+    "longitude": -122.3232847,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "1281",
@@ -1799,7 +2359,17 @@
     "fullBaths": 1,
     "totalBaths": 1.0,
     "latitude": 47.6139423,
-    "longitude": -122.3273265
+    "longitude": -122.3273265,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "491483",
@@ -1830,7 +2400,17 @@
     "fullBaths": 2,
     "totalBaths": 2.0,
     "latitude": 47.5601927,
-    "longitude": -122.2804379
+    "longitude": -122.2804379,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "170521",
@@ -1861,7 +2441,17 @@
     "fullBaths": 1,
     "totalBaths": 1.5,
     "latitude": 47.5874393,
-    "longitude": -122.298892
+    "longitude": -122.298892,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "201260214",
@@ -1892,7 +2482,17 @@
     "fullBaths": 3,
     "totalBaths": 3.0,
     "latitude": 47.6792941,
-    "longitude": -122.395275
+    "longitude": -122.395275,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "174024421",
@@ -1923,7 +2523,17 @@
     "fullBaths": 2,
     "totalBaths": 2.0,
     "latitude": 47.6904656,
-    "longitude": -122.3808584
+    "longitude": -122.3808584,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "152518",
@@ -1954,7 +2564,17 @@
     "fullBaths": 5,
     "totalBaths": 5.0,
     "latitude": 47.5482434,
-    "longitude": -122.3970645
+    "longitude": -122.3970645,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "64894",
@@ -1985,7 +2605,17 @@
     "fullBaths": 2,
     "totalBaths": 2.0,
     "latitude": 47.6250307,
-    "longitude": -122.3639284
+    "longitude": -122.3639284,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "158649",
@@ -2016,7 +2646,17 @@
     "fullBaths": 3,
     "totalBaths": 3.5,
     "latitude": 47.5373041,
-    "longitude": -122.3874509
+    "longitude": -122.3874509,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "201260026",
@@ -2047,7 +2687,17 @@
     "fullBaths": 2,
     "totalBaths": 2.5,
     "latitude": 47.7144342,
-    "longitude": -122.2815559
+    "longitude": -122.2815559,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "21882304",
@@ -2078,7 +2728,17 @@
     "fullBaths": 1,
     "totalBaths": 1.0,
     "latitude": 47.6139381,
-    "longitude": -122.3175671
+    "longitude": -122.3175671,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "96626",
@@ -2109,7 +2769,17 @@
     "fullBaths": 2,
     "totalBaths": 2.0,
     "latitude": 47.7288651,
-    "longitude": -122.3572717
+    "longitude": -122.3572717,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "201259914",
@@ -2140,7 +2810,17 @@
     "fullBaths": 2,
     "totalBaths": 2.0,
     "latitude": 47.7144705,
-    "longitude": -122.2814855
+    "longitude": -122.2814855,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "124736",
@@ -2171,7 +2851,17 @@
     "fullBaths": 3,
     "totalBaths": 3.5,
     "latitude": 47.6510387,
-    "longitude": -122.3838959
+    "longitude": -122.3838959,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "201259858",
@@ -2202,7 +2892,17 @@
     "fullBaths": 2,
     "totalBaths": 2.0,
     "latitude": 47.702715,
-    "longitude": -122.3731475
+    "longitude": -122.3731475,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "22405850",
@@ -2233,7 +2933,17 @@
     "fullBaths": 3,
     "totalBaths": 3.0,
     "latitude": 47.4978401,
-    "longitude": -122.2597305
+    "longitude": -122.2597305,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "170522",
@@ -2264,7 +2974,17 @@
     "fullBaths": 1,
     "totalBaths": 1.0,
     "latitude": 47.5881651,
-    "longitude": -122.3041409
+    "longitude": -122.3041409,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "113753105",
@@ -2295,7 +3015,17 @@
     "fullBaths": 2,
     "totalBaths": 2.5,
     "latitude": 47.6758706,
-    "longitude": -122.3835292
+    "longitude": -122.3835292,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "201259288",
@@ -2326,7 +3056,17 @@
     "fullBaths": 3,
     "totalBaths": 3.5,
     "latitude": 47.7314501,
-    "longitude": -122.3388669
+    "longitude": -122.3388669,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "102702",
@@ -2357,7 +3097,17 @@
     "fullBaths": 2,
     "totalBaths": 2.0,
     "latitude": 47.7315189,
-    "longitude": -122.3389202
+    "longitude": -122.3389202,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "150637",
@@ -2388,7 +3138,17 @@
     "fullBaths": 3,
     "totalBaths": 3.0,
     "latitude": 47.5838936,
-    "longitude": -122.3835005
+    "longitude": -122.3835005,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "199481463",
@@ -2419,7 +3179,17 @@
     "fullBaths": 2,
     "totalBaths": 2.0,
     "latitude": 47.6648019,
-    "longitude": -122.3384577
+    "longitude": -122.3384577,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "300780",
@@ -2450,7 +3220,17 @@
     "fullBaths": 2,
     "totalBaths": 2.0,
     "latitude": 47.6838223,
-    "longitude": -122.347856
+    "longitude": -122.347856,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "191512315",
@@ -2481,7 +3261,17 @@
     "fullBaths": 1,
     "totalBaths": 1.0,
     "latitude": 47.6798364,
-    "longitude": -122.2639942
+    "longitude": -122.2639942,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "329470",
@@ -2512,7 +3302,17 @@
     "fullBaths": 1,
     "totalBaths": 1.5,
     "latitude": 47.5706833,
-    "longitude": -122.3808046
+    "longitude": -122.3808046,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "107433",
@@ -2543,7 +3343,17 @@
     "fullBaths": 3,
     "totalBaths": 3.0,
     "latitude": 47.6983031,
-    "longitude": -122.3066114
+    "longitude": -122.3066114,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "145709449",
@@ -2574,7 +3384,17 @@
     "fullBaths": 2,
     "totalBaths": 2.0,
     "latitude": 47.6294536,
-    "longitude": -122.3470246
+    "longitude": -122.3470246,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "121175",
@@ -2605,7 +3425,17 @@
     "fullBaths": 3,
     "totalBaths": 3.0,
     "latitude": 47.6705953,
-    "longitude": -122.2642673
+    "longitude": -122.2642673,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "474391",
@@ -2636,7 +3466,17 @@
     "fullBaths": 1,
     "totalBaths": 1.0,
     "latitude": 47.5250105,
-    "longitude": -122.3477412
+    "longitude": -122.3477412,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "159390",
@@ -2667,7 +3507,17 @@
     "fullBaths": 2,
     "totalBaths": 2.0,
     "latitude": 47.5436034,
-    "longitude": -122.3622821
+    "longitude": -122.3622821,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "17381935",
@@ -2698,7 +3548,17 @@
     "fullBaths": 1,
     "totalBaths": 1.0,
     "latitude": 47.5573678,
-    "longitude": -122.3811502
+    "longitude": -122.3811502,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "290578",
@@ -2729,7 +3589,17 @@
     "fullBaths": 3,
     "totalBaths": 3.0,
     "latitude": 47.6766856,
-    "longitude": -122.4027299
+    "longitude": -122.4027299,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "140727",
@@ -2760,7 +3630,17 @@
     "fullBaths": 2,
     "totalBaths": 2.0,
     "latitude": 47.6085283,
-    "longitude": -122.2886274
+    "longitude": -122.2886274,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "12536691",
@@ -2791,7 +3671,17 @@
     "fullBaths": 2,
     "totalBaths": 2.0,
     "latitude": 47.6154974,
-    "longitude": -122.3515229
+    "longitude": -122.3515229,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "162845",
@@ -2822,7 +3712,17 @@
     "fullBaths": 2,
     "totalBaths": 2.0,
     "latitude": 47.6737411,
-    "longitude": -122.4032934
+    "longitude": -122.4032934,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "201256772",
@@ -2853,7 +3753,17 @@
     "fullBaths": 3,
     "totalBaths": 3.0,
     "latitude": 47.546058,
-    "longitude": -122.3841834
+    "longitude": -122.3841834,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "35624963",
@@ -2884,7 +3794,17 @@
     "fullBaths": 1,
     "totalBaths": 1.5,
     "latitude": 47.6378821,
-    "longitude": -122.3243338
+    "longitude": -122.3243338,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "201256486",
@@ -2915,7 +3835,17 @@
     "fullBaths": 3,
     "totalBaths": 3.0,
     "latitude": 47.546058,
-    "longitude": -122.3841834
+    "longitude": -122.3841834,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "104216985",
@@ -2946,7 +3876,17 @@
     "fullBaths": 2,
     "totalBaths": 2.5,
     "latitude": 47.6608559,
-    "longitude": -122.3287051
+    "longitude": -122.3287051,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "38848",
@@ -2977,7 +3917,17 @@
     "fullBaths": 2,
     "totalBaths": 2.5,
     "latitude": 47.6608661,
-    "longitude": -122.3286835
+    "longitude": -122.3286835,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "109661015",
@@ -3008,7 +3958,17 @@
     "fullBaths": 2,
     "totalBaths": 2.0,
     "latitude": 47.570694,
-    "longitude": -122.2876211
+    "longitude": -122.2876211,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "107889",
@@ -3039,7 +3999,17 @@
     "fullBaths": 2,
     "totalBaths": 2.0,
     "latitude": 47.7041752,
-    "longitude": -122.3091555
+    "longitude": -122.3091555,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "179377079",
@@ -3070,7 +4040,17 @@
     "fullBaths": 2,
     "totalBaths": 2.5,
     "latitude": 47.6832601,
-    "longitude": -122.2934863
+    "longitude": -122.2934863,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "313626",
@@ -3101,7 +4081,17 @@
     "fullBaths": 2,
     "totalBaths": 2.0,
     "latitude": 47.6700971,
-    "longitude": -122.2807331
+    "longitude": -122.2807331,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "330707",
@@ -3132,7 +4122,17 @@
     "fullBaths": 2,
     "totalBaths": 2.5,
     "latitude": 47.5865179,
-    "longitude": -122.387392
+    "longitude": -122.387392,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "196615615",
@@ -3163,7 +4163,17 @@
     "fullBaths": 3,
     "totalBaths": 3.5,
     "latitude": 47.7220003,
-    "longitude": -122.2900223
+    "longitude": -122.2900223,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "317977",
@@ -3194,7 +4204,17 @@
     "fullBaths": 2,
     "totalBaths": 2.0,
     "latitude": 47.6784069,
-    "longitude": -122.2825734
+    "longitude": -122.2825734,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "21495474",
@@ -3225,7 +4245,17 @@
     "fullBaths": 2,
     "totalBaths": 2.5,
     "latitude": 47.5975938,
-    "longitude": -122.2866776
+    "longitude": -122.2866776,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "192259545",
@@ -3256,7 +4286,17 @@
     "fullBaths": 3,
     "totalBaths": 3.5,
     "latitude": 47.626272,
-    "longitude": -122.303248
+    "longitude": -122.303248,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "22055131",
@@ -3287,7 +4327,17 @@
     "fullBaths": 1,
     "totalBaths": 1.0,
     "latitude": 47.6262376,
-    "longitude": -122.3246022
+    "longitude": -122.3246022,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "200847257",
@@ -3318,7 +4368,17 @@
     "fullBaths": 2,
     "totalBaths": 2.5,
     "latitude": 47.6933643,
-    "longitude": -122.3219394
+    "longitude": -122.3219394,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "128114",
@@ -3349,7 +4409,17 @@
     "fullBaths": 2,
     "totalBaths": 2.0,
     "latitude": 47.65936,
-    "longitude": -122.3985274
+    "longitude": -122.3985274,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "3917",
@@ -3380,7 +4450,17 @@
     "fullBaths": 2,
     "totalBaths": 2.0,
     "latitude": 47.521727,
-    "longitude": -122.3905344
+    "longitude": -122.3905344,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "312929",
@@ -3411,7 +4491,17 @@
     "fullBaths": 3,
     "totalBaths": 3.0,
     "latitude": 47.6730093,
-    "longitude": -122.2939593
+    "longitude": -122.2939593,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "491380",
@@ -3442,7 +4532,17 @@
     "fullBaths": 2,
     "totalBaths": 2.5,
     "latitude": 47.5568882,
-    "longitude": -122.2756544
+    "longitude": -122.2756544,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "201251100",
@@ -3473,7 +4573,17 @@
     "fullBaths": 2,
     "totalBaths": 2.0,
     "latitude": 47.5536162,
-    "longitude": -122.2878422
+    "longitude": -122.2878422,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "2069903",
@@ -3504,7 +4614,17 @@
     "fullBaths": null,
     "totalBaths": 9.0,
     "latitude": 47.6647227,
-    "longitude": -122.3513428
+    "longitude": -122.3513428,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "171934448",
@@ -3535,7 +4655,17 @@
     "fullBaths": 3,
     "totalBaths": 3.0,
     "latitude": 47.6338466,
-    "longitude": -122.3419338
+    "longitude": -122.3419338,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "40728",
@@ -3566,7 +4696,17 @@
     "fullBaths": 2,
     "totalBaths": 2.0,
     "latitude": 47.5936399,
-    "longitude": -122.3838848
+    "longitude": -122.3838848,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "22694351",
@@ -3597,7 +4737,17 @@
     "fullBaths": 1,
     "totalBaths": 1.0,
     "latitude": 47.6479122,
-    "longitude": -122.3824535
+    "longitude": -122.3824535,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "97810",
@@ -3628,7 +4778,17 @@
     "fullBaths": 2,
     "totalBaths": 2.5,
     "latitude": 47.7163815,
-    "longitude": -122.3491642
+    "longitude": -122.3491642,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "200946274",
@@ -3659,7 +4819,17 @@
     "fullBaths": 2,
     "totalBaths": 2.5,
     "latitude": 47.5749015,
-    "longitude": -122.3047144
+    "longitude": -122.3047144,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "28624338",
@@ -3690,7 +4860,17 @@
     "fullBaths": 1,
     "totalBaths": 1.5,
     "latitude": 47.6193159,
-    "longitude": -122.3441412
+    "longitude": -122.3441412,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "163102",
@@ -3721,7 +4901,17 @@
     "fullBaths": 2,
     "totalBaths": 2.0,
     "latitude": 47.6851798,
-    "longitude": -122.3836959
+    "longitude": -122.3836959,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "201250755",
@@ -3752,7 +4942,17 @@
     "fullBaths": 3,
     "totalBaths": 3.5,
     "latitude": 47.6517518,
-    "longitude": -122.3844294
+    "longitude": -122.3844294,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "2087443",
@@ -3783,7 +4983,17 @@
     "fullBaths": null,
     "totalBaths": 6.0,
     "latitude": 47.6216709,
-    "longitude": -122.3170196
+    "longitude": -122.3170196,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "179737073",
@@ -3814,7 +5024,17 @@
     "fullBaths": null,
     "totalBaths": 2.0,
     "latitude": 47.6114148,
-    "longitude": -122.3020412
+    "longitude": -122.3020412,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "304720",
@@ -3845,7 +5065,17 @@
     "fullBaths": 2,
     "totalBaths": 2.0,
     "latitude": 47.668061,
-    "longitude": -122.3245165
+    "longitude": -122.3245165,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "162363",
@@ -3876,7 +5106,17 @@
     "fullBaths": 2,
     "totalBaths": 2.0,
     "latitude": 47.6742945,
-    "longitude": -122.3921212
+    "longitude": -122.3921212,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "22440888",
@@ -3907,7 +5147,17 @@
     "fullBaths": 2,
     "totalBaths": 2.0,
     "latitude": 47.5933731,
-    "longitude": -122.298104
+    "longitude": -122.298104,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "172710534",
@@ -3938,7 +5188,17 @@
     "fullBaths": 2,
     "totalBaths": 2.0,
     "latitude": 47.6172009,
-    "longitude": -122.3306455
+    "longitude": -122.3306455,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "51680",
@@ -3969,7 +5229,17 @@
     "fullBaths": 1,
     "totalBaths": 1.0,
     "latitude": 47.614899,
-    "longitude": -122.347719
+    "longitude": -122.347719,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "129236",
@@ -4000,7 +5270,17 @@
     "fullBaths": 3,
     "totalBaths": 3.0,
     "latitude": 47.642335,
-    "longitude": -122.3579349
+    "longitude": -122.3579349,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "201250420",
@@ -4031,7 +5311,17 @@
     "fullBaths": 2,
     "totalBaths": 2.5,
     "latitude": 47.533686,
-    "longitude": -122.3492989
+    "longitude": -122.3492989,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "12537300",
@@ -4062,7 +5352,17 @@
     "fullBaths": 1,
     "totalBaths": 1.0,
     "latitude": 47.6718552,
-    "longitude": -122.3751223
+    "longitude": -122.3751223,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "2091227",
@@ -4093,7 +5393,17 @@
     "fullBaths": 3,
     "totalBaths": 3.5,
     "latitude": 47.6387207,
-    "longitude": -122.3713905
+    "longitude": -122.3713905,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "97175",
@@ -4124,7 +5434,17 @@
     "fullBaths": 2,
     "totalBaths": 2.0,
     "latitude": 47.722995,
-    "longitude": -122.357446
+    "longitude": -122.357446,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "192265469",
@@ -4155,7 +5475,17 @@
     "fullBaths": 1,
     "totalBaths": 1.0,
     "latitude": 47.6069389,
-    "longitude": -122.327108
+    "longitude": -122.327108,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "199460484",
@@ -4186,7 +5516,17 @@
     "fullBaths": 2,
     "totalBaths": 2.0,
     "latitude": 47.7001551,
-    "longitude": -122.3038539
+    "longitude": -122.3038539,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "117475",
@@ -4217,7 +5557,17 @@
     "fullBaths": 1,
     "totalBaths": 1.0,
     "latitude": 47.6648324,
-    "longitude": -122.3386826
+    "longitude": -122.3386826,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "165487",
@@ -4248,7 +5598,17 @@
     "fullBaths": 2,
     "totalBaths": 2.5,
     "latitude": 47.6763308,
-    "longitude": -122.3900223
+    "longitude": -122.3900223,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "198760418",
@@ -4279,7 +5639,17 @@
     "fullBaths": 2,
     "totalBaths": 2.5,
     "latitude": 47.6867963,
-    "longitude": -122.3893049
+    "longitude": -122.3893049,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "201250111",
@@ -4310,7 +5680,17 @@
     "fullBaths": 2,
     "totalBaths": 2.5,
     "latitude": 47.6446324,
-    "longitude": -122.4006183
+    "longitude": -122.4006183,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "8187517",
@@ -4341,7 +5721,17 @@
     "fullBaths": 3,
     "totalBaths": 3.5,
     "latitude": 47.6033273,
-    "longitude": -122.3026983
+    "longitude": -122.3026983,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "315019",
@@ -4372,7 +5762,17 @@
     "fullBaths": 3,
     "totalBaths": 3.0,
     "latitude": 47.6792148,
-    "longitude": -122.2865323
+    "longitude": -122.2865323,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "106196",
@@ -4403,7 +5803,17 @@
     "fullBaths": 2,
     "totalBaths": 2.5,
     "latitude": 47.7103715,
-    "longitude": -122.3162551
+    "longitude": -122.3162551,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "312044",
@@ -4434,7 +5844,17 @@
     "fullBaths": 2,
     "totalBaths": 2.5,
     "latitude": 47.672052,
-    "longitude": -122.3203953
+    "longitude": -122.3203953,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "146154",
@@ -4465,7 +5885,17 @@
     "fullBaths": 2,
     "totalBaths": 2.5,
     "latitude": 47.6256967,
-    "longitude": -122.2969764
+    "longitude": -122.2969764,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "164121",
@@ -4496,7 +5926,17 @@
     "fullBaths": 3,
     "totalBaths": 3.5,
     "latitude": 47.6830168,
-    "longitude": -122.3824532
+    "longitude": -122.3824532,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "24408",
@@ -4527,7 +5967,17 @@
     "fullBaths": 2,
     "totalBaths": 2.0,
     "latitude": 47.6380539,
-    "longitude": -122.373107
+    "longitude": -122.373107,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "12090645",
@@ -4558,7 +6008,17 @@
     "fullBaths": 1,
     "totalBaths": 1.0,
     "latitude": 47.7336516,
-    "longitude": -122.3420654
+    "longitude": -122.3420654,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "474758",
@@ -4589,7 +6049,17 @@
     "fullBaths": 2,
     "totalBaths": 2.0,
     "latitude": 47.5244976,
-    "longitude": -122.3572593
+    "longitude": -122.3572593,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "133183",
@@ -4620,7 +6090,17 @@
     "fullBaths": 2,
     "totalBaths": 2.5,
     "latitude": 47.6374691,
-    "longitude": -122.3694531
+    "longitude": -122.3694531,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "8189466",
@@ -4651,7 +6131,17 @@
     "fullBaths": 2,
     "totalBaths": 2.5,
     "latitude": 47.6528718,
-    "longitude": -122.3409707
+    "longitude": -122.3409707,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "148209",
@@ -4682,7 +6172,17 @@
     "fullBaths": 2,
     "totalBaths": 2.0,
     "latitude": 47.6184172,
-    "longitude": -122.2920488
+    "longitude": -122.2920488,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "107237",
@@ -4713,7 +6213,17 @@
     "fullBaths": 3,
     "totalBaths": 3.5,
     "latitude": 47.6996197,
-    "longitude": -122.3106863
+    "longitude": -122.3106863,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "114943",
@@ -4744,7 +6254,17 @@
     "fullBaths": 2,
     "totalBaths": 2.0,
     "latitude": 47.7336343,
-    "longitude": -122.2998799
+    "longitude": -122.2998799,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "167266335",
@@ -4775,7 +6295,17 @@
     "fullBaths": 2,
     "totalBaths": 2.0,
     "latitude": 47.683804,
-    "longitude": -122.376414
+    "longitude": -122.376414,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "138235",
@@ -4806,7 +6336,17 @@
     "fullBaths": 2,
     "totalBaths": 2.0,
     "latitude": 47.6426376,
-    "longitude": -122.300992
+    "longitude": -122.300992,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "117850",
@@ -4837,7 +6377,17 @@
     "fullBaths": 2,
     "totalBaths": 2.0,
     "latitude": 47.662715,
-    "longitude": -122.3354397
+    "longitude": -122.3354397,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "136549",
@@ -4868,7 +6418,17 @@
     "fullBaths": 3,
     "totalBaths": 3.0,
     "latitude": 47.6332405,
-    "longitude": -122.3121024
+    "longitude": -122.3121024,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "201249215",
@@ -4899,7 +6459,17 @@
     "fullBaths": 2,
     "totalBaths": 2.0,
     "latitude": 47.556389,
-    "longitude": -122.3184502
+    "longitude": -122.3184502,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "107568",
@@ -4930,7 +6500,17 @@
     "fullBaths": 2,
     "totalBaths": 2.0,
     "latitude": 47.7036137,
-    "longitude": -122.3181143
+    "longitude": -122.3181143,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "2068535",
@@ -4961,7 +6541,17 @@
     "fullBaths": null,
     "totalBaths": 6.0,
     "latitude": 47.6210806,
-    "longitude": -122.310434
+    "longitude": -122.310434,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "313460",
@@ -4992,7 +6582,17 @@
     "fullBaths": 1,
     "totalBaths": 1.0,
     "latitude": 47.669669,
-    "longitude": -122.2803119
+    "longitude": -122.2803119,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "290473",
@@ -5023,7 +6623,17 @@
     "fullBaths": 2,
     "totalBaths": 3.0,
     "latitude": 47.6760131,
-    "longitude": -122.4038463
+    "longitude": -122.4038463,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "115171",
@@ -5054,7 +6664,17 @@
     "fullBaths": 2,
     "totalBaths": 2.5,
     "latitude": 47.7244314,
-    "longitude": -122.3108134
+    "longitude": -122.3108134,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "33197",
@@ -5085,7 +6705,17 @@
     "fullBaths": 2,
     "totalBaths": 2.0,
     "latitude": 47.7169934,
-    "longitude": -122.3121622
+    "longitude": -122.3121622,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "44161",
@@ -5116,7 +6746,17 @@
     "fullBaths": 1,
     "totalBaths": 1.0,
     "latitude": 47.6085903,
-    "longitude": -122.3415734
+    "longitude": -122.3415734,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "187245594",
@@ -5147,7 +6787,17 @@
     "fullBaths": 3,
     "totalBaths": 3.5,
     "latitude": 47.5268061,
-    "longitude": -122.3581359
+    "longitude": -122.3581359,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "152071",
@@ -5178,7 +6828,17 @@
     "fullBaths": 2,
     "totalBaths": 2.0,
     "latitude": 47.5680147,
-    "longitude": -122.4046319
+    "longitude": -122.4046319,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "157266",
@@ -5209,7 +6869,17 @@
     "fullBaths": 3,
     "totalBaths": 3.0,
     "latitude": 47.5255147,
-    "longitude": -122.3871128
+    "longitude": -122.3871128,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "308063",
@@ -5240,7 +6910,17 @@
     "fullBaths": 3,
     "totalBaths": 3.5,
     "latitude": 47.6736842,
-    "longitude": -122.3159523
+    "longitude": -122.3159523,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "132374",
@@ -5271,7 +6951,17 @@
     "fullBaths": 4,
     "totalBaths": 5.0,
     "latitude": 47.6306457,
-    "longitude": -122.3669165
+    "longitude": -122.3669165,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "197833439",
@@ -5302,7 +6992,17 @@
     "fullBaths": 2,
     "totalBaths": 2.5,
     "latitude": 47.5450179,
-    "longitude": -122.3856784
+    "longitude": -122.3856784,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "126337",
@@ -5333,7 +7033,17 @@
     "fullBaths": 2,
     "totalBaths": 2.0,
     "latitude": 47.6352836,
-    "longitude": -122.3919181
+    "longitude": -122.3919181,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "126240",
@@ -5364,7 +7074,17 @@
     "fullBaths": 3,
     "totalBaths": 3.5,
     "latitude": 47.6338096,
-    "longitude": -122.3909907
+    "longitude": -122.3909907,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "124622",
@@ -5395,7 +7115,17 @@
     "fullBaths": 2,
     "totalBaths": 2.5,
     "latitude": 47.6528593,
-    "longitude": -122.3856855
+    "longitude": -122.3856855,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "20666",
@@ -5426,7 +7156,17 @@
     "fullBaths": 1,
     "totalBaths": 1.0,
     "latitude": 47.6240414,
-    "longitude": -122.35893
+    "longitude": -122.35893,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "12304985",
@@ -5457,7 +7197,17 @@
     "fullBaths": 2,
     "totalBaths": 2.0,
     "latitude": 47.5486575,
-    "longitude": -122.3703353
+    "longitude": -122.3703353,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "113037",
@@ -5488,7 +7238,17 @@
     "fullBaths": 2,
     "totalBaths": 2.0,
     "latitude": 47.7003321,
-    "longitude": -122.2786707
+    "longitude": -122.2786707,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "126929",
@@ -5519,7 +7279,17 @@
     "fullBaths": 2,
     "totalBaths": 2.0,
     "latitude": 47.6532568,
-    "longitude": -122.3985249
+    "longitude": -122.3985249,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "52428532",
@@ -5550,7 +7320,17 @@
     "fullBaths": 2,
     "totalBaths": 2.5,
     "latitude": 47.6797556,
-    "longitude": -122.3850721
+    "longitude": -122.3850721,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "168697",
@@ -5581,7 +7361,17 @@
     "fullBaths": 2,
     "totalBaths": 2.5,
     "latitude": 47.5767976,
-    "longitude": -122.3086426
+    "longitude": -122.3086426,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "145207212",
@@ -5612,7 +7402,17 @@
     "fullBaths": 1,
     "totalBaths": 1.5,
     "latitude": 47.5878141,
-    "longitude": -122.3953494
+    "longitude": -122.3953494,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "2082141",
@@ -5643,7 +7443,17 @@
     "fullBaths": 2,
     "totalBaths": 2.5,
     "latitude": 47.67046,
-    "longitude": -122.3907453
+    "longitude": -122.3907453,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "173242",
@@ -5674,7 +7484,17 @@
     "fullBaths": 2,
     "totalBaths": 2.0,
     "latitude": 47.5502505,
-    "longitude": -122.279897
+    "longitude": -122.279897,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "153288",
@@ -5705,7 +7525,17 @@
     "fullBaths": 3,
     "totalBaths": 3.0,
     "latitude": 47.5476859,
-    "longitude": -122.3986273
+    "longitude": -122.3986273,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "22175",
@@ -5736,7 +7566,17 @@
     "fullBaths": 1,
     "totalBaths": 1.0,
     "latitude": 47.6244728,
-    "longitude": -122.3617406
+    "longitude": -122.3617406,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "470470",
@@ -5767,7 +7607,17 @@
     "fullBaths": 1,
     "totalBaths": 1.5,
     "latitude": 47.5552303,
-    "longitude": -122.383209
+    "longitude": -122.383209,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "109693",
@@ -5798,7 +7648,17 @@
     "fullBaths": 2,
     "totalBaths": 2.0,
     "latitude": 47.6996119,
-    "longitude": -122.317937
+    "longitude": -122.317937,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "102290",
@@ -5829,7 +7689,17 @@
     "fullBaths": 2,
     "totalBaths": 2.0,
     "latitude": 47.725246,
-    "longitude": -122.32826
+    "longitude": -122.32826,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "104015",
@@ -5860,7 +7730,17 @@
     "fullBaths": 3,
     "totalBaths": 3.0,
     "latitude": 47.717267,
-    "longitude": -122.3390412
+    "longitude": -122.3390412,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "146041",
@@ -5891,7 +7771,17 @@
     "fullBaths": 3,
     "totalBaths": 3.0,
     "latitude": 47.6287731,
-    "longitude": -122.3000682
+    "longitude": -122.3000682,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "12536727",
@@ -5922,7 +7812,17 @@
     "fullBaths": 1,
     "totalBaths": 1.0,
     "latitude": 47.6024808,
-    "longitude": -122.3139427
+    "longitude": -122.3139427,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "201247910",
@@ -5953,7 +7853,17 @@
     "fullBaths": 2,
     "totalBaths": 2.5,
     "latitude": 47.7043555,
-    "longitude": -122.3737714
+    "longitude": -122.3737714,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "495217",
@@ -5984,7 +7894,17 @@
     "fullBaths": 2,
     "totalBaths": 2.0,
     "latitude": 47.680545,
-    "longitude": -122.3712244
+    "longitude": -122.3712244,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "181091",
@@ -6015,7 +7935,17 @@
     "fullBaths": 2,
     "totalBaths": 2.5,
     "latitude": 47.5126009,
-    "longitude": -122.354191
+    "longitude": -122.354191,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "488442",
@@ -6046,7 +7976,17 @@
     "fullBaths": 2,
     "totalBaths": 2.5,
     "latitude": 47.5685942,
-    "longitude": -122.2735661
+    "longitude": -122.2735661,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "171855743",
@@ -6077,7 +8017,17 @@
     "fullBaths": 2,
     "totalBaths": 2.0,
     "latitude": 47.6743889,
-    "longitude": -122.3663479
+    "longitude": -122.3663479,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "119540",
@@ -6108,7 +8058,17 @@
     "fullBaths": 2,
     "totalBaths": 2.5,
     "latitude": 47.6541024,
-    "longitude": -122.3308067
+    "longitude": -122.3308067,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "159396",
@@ -6139,7 +8099,17 @@
     "fullBaths": 1,
     "totalBaths": 1.0,
     "latitude": 47.5582704,
-    "longitude": -122.3639825
+    "longitude": -122.3639825,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "201247692",
@@ -6170,7 +8140,17 @@
     "fullBaths": 2,
     "totalBaths": 2.5,
     "latitude": 47.5582203,
-    "longitude": -122.3639905
+    "longitude": -122.3639905,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "21616649",
@@ -6201,7 +8181,17 @@
     "fullBaths": 2,
     "totalBaths": 2.0,
     "latitude": 47.6098649,
-    "longitude": -122.3396549
+    "longitude": -122.3396549,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "162768",
@@ -6232,7 +8222,17 @@
     "fullBaths": 1,
     "totalBaths": 1.5,
     "latitude": 47.6702073,
-    "longitude": -122.4015568
+    "longitude": -122.4015568,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "477664",
@@ -6263,7 +8263,17 @@
     "fullBaths": 2,
     "totalBaths": 2.0,
     "latitude": 47.5223986,
-    "longitude": -122.3181843
+    "longitude": -122.3181843,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "179602182",
@@ -6294,7 +8304,17 @@
     "fullBaths": 2,
     "totalBaths": 2.0,
     "latitude": 47.5487422,
-    "longitude": -122.3948092
+    "longitude": -122.3948092,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "173656716",
@@ -6325,7 +8345,17 @@
     "fullBaths": 2,
     "totalBaths": 2.5,
     "latitude": 47.546327,
-    "longitude": -122.3752574
+    "longitude": -122.3752574,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "146626",
@@ -6356,7 +8386,17 @@
     "fullBaths": 3,
     "totalBaths": 3.0,
     "latitude": 47.6138051,
-    "longitude": -122.2965893
+    "longitude": -122.2965893,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "8190357",
@@ -6387,7 +8427,17 @@
     "fullBaths": 1,
     "totalBaths": 1.0,
     "latitude": 47.631528,
-    "longitude": -122.351979
+    "longitude": -122.351979,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "113178660",
@@ -6418,7 +8468,17 @@
     "fullBaths": 2,
     "totalBaths": 2.5,
     "latitude": 47.6829596,
-    "longitude": -122.374281
+    "longitude": -122.374281,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "321563",
@@ -6449,7 +8509,17 @@
     "fullBaths": 2,
     "totalBaths": 2.0,
     "latitude": 47.6832325,
-    "longitude": -122.267787
+    "longitude": -122.267787,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "493962",
@@ -6480,7 +8550,17 @@
     "fullBaths": 3,
     "totalBaths": 4.0,
     "latitude": 47.6713919,
-    "longitude": -122.371012
+    "longitude": -122.371012,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "49867",
@@ -6511,7 +8591,17 @@
     "fullBaths": 2,
     "totalBaths": 2.0,
     "latitude": 47.614899,
-    "longitude": -122.347719
+    "longitude": -122.347719,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "328196",
@@ -6542,7 +8632,17 @@
     "fullBaths": 2,
     "totalBaths": 2.5,
     "latitude": 47.5640654,
-    "longitude": -122.3824696
+    "longitude": -122.3824696,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "2065041",
@@ -6573,7 +8673,17 @@
     "fullBaths": 3,
     "totalBaths": 3.0,
     "latitude": 47.6629125,
-    "longitude": -122.2743886
+    "longitude": -122.2743886,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "191563121",
@@ -6604,7 +8714,17 @@
     "fullBaths": 2,
     "totalBaths": 2.0,
     "latitude": 47.6899846,
-    "longitude": -122.3895209
+    "longitude": -122.3895209,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "62028",
@@ -6635,7 +8755,17 @@
     "fullBaths": 1,
     "totalBaths": 1.0,
     "latitude": 47.6163178,
-    "longitude": -122.352084
+    "longitude": -122.352084,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "139287",
@@ -6666,7 +8796,17 @@
     "fullBaths": 4,
     "totalBaths": 4.5,
     "latitude": 47.628188,
-    "longitude": -122.281787
+    "longitude": -122.281787,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "21616605",
@@ -6697,7 +8837,17 @@
     "fullBaths": 1,
     "totalBaths": 1.0,
     "latitude": 47.6176125,
-    "longitude": -122.3523057
+    "longitude": -122.3523057,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "471671",
@@ -6728,7 +8878,17 @@
     "fullBaths": 2,
     "totalBaths": 2.0,
     "latitude": 47.5459589,
-    "longitude": -122.3842499
+    "longitude": -122.3842499,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "330560",
@@ -6759,7 +8919,17 @@
     "fullBaths": 1,
     "totalBaths": 1.5,
     "latitude": 47.586052,
-    "longitude": -122.3880717
+    "longitude": -122.3880717,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "152105",
@@ -6790,7 +8960,17 @@
     "fullBaths": 3,
     "totalBaths": 3.5,
     "latitude": 47.567984,
-    "longitude": -122.4041528
+    "longitude": -122.4041528,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "142163",
@@ -6821,7 +9001,17 @@
     "fullBaths": 2,
     "totalBaths": 2.0,
     "latitude": 47.6210806,
-    "longitude": -122.3084752
+    "longitude": -122.3084752,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "201243573",
@@ -6852,7 +9042,17 @@
     "fullBaths": 2,
     "totalBaths": 2.5,
     "latitude": 47.6507534,
-    "longitude": -122.4003844
+    "longitude": -122.4003844,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "195903877",
@@ -6883,7 +9083,17 @@
     "fullBaths": 1,
     "totalBaths": 2.0,
     "latitude": 47.7328351,
-    "longitude": -122.3415171
+    "longitude": -122.3415171,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "176358866",
@@ -6914,7 +9124,17 @@
     "fullBaths": 1,
     "totalBaths": 1.0,
     "latitude": 47.6002447,
-    "longitude": -122.3280012
+    "longitude": -122.3280012,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "113995706",
@@ -6945,7 +9165,17 @@
     "fullBaths": 1,
     "totalBaths": 1.0,
     "latitude": 47.6118456,
-    "longitude": -122.3233202
+    "longitude": -122.3233202,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "2070587",
@@ -6976,7 +9206,17 @@
     "fullBaths": 2,
     "totalBaths": 2.5,
     "latitude": 47.628731,
-    "longitude": -122.3485737
+    "longitude": -122.3485737,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "201016332",
@@ -7007,7 +9247,17 @@
     "fullBaths": 2,
     "totalBaths": 2.5,
     "latitude": 47.7088512,
-    "longitude": -122.3090292
+    "longitude": -122.3090292,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "201242811",
@@ -7038,7 +9288,17 @@
     "fullBaths": 3,
     "totalBaths": 3.0,
     "latitude": 47.5131177,
-    "longitude": -122.3110811
+    "longitude": -122.3110811,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "491039",
@@ -7069,7 +9329,17 @@
     "fullBaths": 2,
     "totalBaths": 2.0,
     "latitude": 47.5499146,
-    "longitude": -122.2706916
+    "longitude": -122.2706916,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "122119",
@@ -7100,7 +9370,17 @@
     "fullBaths": 3,
     "totalBaths": 3.0,
     "latitude": 47.6607376,
-    "longitude": -122.2830369
+    "longitude": -122.2830369,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "143676",
@@ -7131,7 +9411,17 @@
     "fullBaths": 3,
     "totalBaths": 3.5,
     "latitude": 47.5902875,
-    "longitude": -122.3152764
+    "longitude": -122.3152764,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "67415",
@@ -7162,7 +9452,17 @@
     "fullBaths": 2,
     "totalBaths": 2.0,
     "latitude": 47.6302728,
-    "longitude": -122.3458947
+    "longitude": -122.3458947,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "143299",
@@ -7193,7 +9493,17 @@
     "fullBaths": 3,
     "totalBaths": 3.0,
     "latitude": 47.5953603,
-    "longitude": -122.3065167
+    "longitude": -122.3065167,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "201242276",
@@ -7224,7 +9534,17 @@
     "fullBaths": 3,
     "totalBaths": 3.5,
     "latitude": 47.6606727,
-    "longitude": -122.327652
+    "longitude": -122.327652,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "491943",
@@ -7255,7 +9575,17 @@
     "fullBaths": 2,
     "totalBaths": 2.5,
     "latitude": 47.5620915,
-    "longitude": -122.2750068
+    "longitude": -122.2750068,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "45464885",
@@ -7286,7 +9616,17 @@
     "fullBaths": 2,
     "totalBaths": 2.5,
     "latitude": 47.5110149,
-    "longitude": -122.3612729
+    "longitude": -122.3612729,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "156993",
@@ -7317,7 +9657,17 @@
     "fullBaths": 1,
     "totalBaths": 1.5,
     "latitude": 47.5077121,
-    "longitude": -122.3756689
+    "longitude": -122.3756689,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "133980",
@@ -7348,7 +9698,17 @@
     "fullBaths": 2,
     "totalBaths": 2.5,
     "latitude": 47.6312918,
-    "longitude": -122.3683189
+    "longitude": -122.3683189,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "39457",
@@ -7379,7 +9739,17 @@
     "fullBaths": 1,
     "totalBaths": 1.0,
     "latitude": 47.617223,
-    "longitude": -122.353623
+    "longitude": -122.353623,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "28702",
@@ -7410,7 +9780,17 @@
     "fullBaths": 2,
     "totalBaths": 2.0,
     "latitude": 47.6177733,
-    "longitude": -122.3231673
+    "longitude": -122.3231673,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "190501383",
@@ -7441,7 +9821,17 @@
     "fullBaths": 2,
     "totalBaths": 2.0,
     "latitude": 47.626056,
-    "longitude": -122.3634696
+    "longitude": -122.3634696,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "101821",
@@ -7472,7 +9862,17 @@
     "fullBaths": 1,
     "totalBaths": 1.5,
     "latitude": 47.7333034,
-    "longitude": -122.3520898
+    "longitude": -122.3520898,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "98634",
@@ -7503,7 +9903,17 @@
     "fullBaths": 3,
     "totalBaths": 3.0,
     "latitude": 47.7034238,
-    "longitude": -122.3532947
+    "longitude": -122.3532947,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "189454206",
@@ -7534,7 +9944,17 @@
     "fullBaths": 2,
     "totalBaths": 2.0,
     "latitude": 47.6505134,
-    "longitude": -122.3756967
+    "longitude": -122.3756967,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "126626",
@@ -7565,7 +9985,17 @@
     "fullBaths": 2,
     "totalBaths": 2.5,
     "latitude": 47.6495412,
-    "longitude": -122.4146094
+    "longitude": -122.4146094,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "2077251",
@@ -7596,7 +10026,17 @@
     "fullBaths": null,
     "totalBaths": 2.0,
     "latitude": 47.6714314,
-    "longitude": -122.3858059
+    "longitude": -122.3858059,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "145230",
@@ -7627,7 +10067,17 @@
     "fullBaths": 1,
     "totalBaths": 1.5,
     "latitude": 47.6051672,
-    "longitude": -122.298585
+    "longitude": -122.298585,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "1732",
@@ -7658,7 +10108,17 @@
     "fullBaths": 1,
     "totalBaths": 1.0,
     "latitude": 47.6212756,
-    "longitude": -122.3249594
+    "longitude": -122.3249594,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "201239867",
@@ -7689,7 +10149,17 @@
     "fullBaths": 2,
     "totalBaths": 2.5,
     "latitude": 47.5297373,
-    "longitude": -122.3756252
+    "longitude": -122.3756252,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "135964",
@@ -7720,7 +10190,17 @@
     "fullBaths": 6,
     "totalBaths": 6.5,
     "latitude": 47.6285216,
-    "longitude": -122.3219916
+    "longitude": -122.3219916,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "112499",
@@ -7751,7 +10231,17 @@
     "fullBaths": 1,
     "totalBaths": 1.0,
     "latitude": 47.7326106,
-    "longitude": -122.2886691
+    "longitude": -122.2886691,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "136247",
@@ -7782,7 +10272,17 @@
     "fullBaths": 3,
     "totalBaths": 3.5,
     "latitude": 47.6310383,
-    "longitude": -122.3043944
+    "longitude": -122.3043944,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "12318296",
@@ -7813,7 +10313,17 @@
     "fullBaths": 2,
     "totalBaths": 2.0,
     "latitude": 47.6162028,
-    "longitude": -122.3356661
+    "longitude": -122.3356661,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "22808010",
@@ -7844,7 +10354,17 @@
     "fullBaths": 1,
     "totalBaths": 1.0,
     "latitude": 47.565883,
-    "longitude": -122.386413
+    "longitude": -122.386413,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "109969501",
@@ -7875,7 +10395,17 @@
     "fullBaths": 3,
     "totalBaths": 3.5,
     "latitude": 47.7034258,
-    "longitude": -122.2779612
+    "longitude": -122.2779612,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "12318479",
@@ -7906,7 +10436,17 @@
     "fullBaths": 1,
     "totalBaths": 1.5,
     "latitude": 47.5225771,
-    "longitude": -122.3573147
+    "longitude": -122.3573147,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "54159",
@@ -7937,7 +10477,17 @@
     "fullBaths": 2,
     "totalBaths": 2.5,
     "latitude": 47.5896134,
-    "longitude": -122.3176766
+    "longitude": -122.3176766,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "201238488",
@@ -7968,7 +10518,17 @@
     "fullBaths": 1,
     "totalBaths": 1.0,
     "latitude": 47.6219296,
-    "longitude": -122.3563932
+    "longitude": -122.3563932,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "12090298",
@@ -7999,7 +10559,17 @@
     "fullBaths": 2,
     "totalBaths": 2.5,
     "latitude": 47.5929789,
-    "longitude": -122.2950981
+    "longitude": -122.2950981,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "160255",
@@ -8030,7 +10600,17 @@
     "fullBaths": null,
     "totalBaths": 3.0,
     "latitude": 47.568454,
-    "longitude": -122.3550511
+    "longitude": -122.3550511,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "201237669",
@@ -8061,7 +10641,17 @@
     "fullBaths": 2,
     "totalBaths": 2.5,
     "latitude": 47.6630702,
-    "longitude": -122.3398989
+    "longitude": -122.3398989,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "174298780",
@@ -8092,7 +10682,17 @@
     "fullBaths": 2,
     "totalBaths": 2.0,
     "latitude": 47.7032989,
-    "longitude": -122.3584809
+    "longitude": -122.3584809,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "177206",
@@ -8123,7 +10723,17 @@
     "fullBaths": 1,
     "totalBaths": 1.0,
     "latitude": 47.5166158,
-    "longitude": -122.268624
+    "longitude": -122.268624,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "201213616",
@@ -8154,7 +10764,17 @@
     "fullBaths": 3,
     "totalBaths": 3.5,
     "latitude": 47.7042042,
-    "longitude": -122.3737714
+    "longitude": -122.3737714,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "31444",
@@ -8185,7 +10805,17 @@
     "fullBaths": 1,
     "totalBaths": 1.0,
     "latitude": 47.6265572,
-    "longitude": -122.3250727
+    "longitude": -122.3250727,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "171318",
@@ -8216,7 +10846,17 @@
     "fullBaths": 1,
     "totalBaths": 1.0,
     "latitude": 47.5730921,
-    "longitude": -122.2891033
+    "longitude": -122.2891033,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "201018230",
@@ -8247,7 +10887,17 @@
     "fullBaths": 2,
     "totalBaths": 2.0,
     "latitude": 47.5942231,
-    "longitude": -122.2963405
+    "longitude": -122.2963405,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "31648",
@@ -8278,7 +10928,17 @@
     "fullBaths": 2,
     "totalBaths": 2.0,
     "latitude": 47.65485,
-    "longitude": -122.326546
+    "longitude": -122.326546,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "301253",
@@ -8309,7 +10969,17 @@
     "fullBaths": 1,
     "totalBaths": 1.0,
     "latitude": 47.6797929,
-    "longitude": -122.3515303
+    "longitude": -122.3515303,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "110180",
@@ -8340,7 +11010,17 @@
     "fullBaths": 2,
     "totalBaths": 2.0,
     "latitude": 47.6950488,
-    "longitude": -122.3146403
+    "longitude": -122.3146403,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "71552",
@@ -8371,7 +11051,17 @@
     "fullBaths": 2,
     "totalBaths": 2.0,
     "latitude": 47.617107,
-    "longitude": -122.351503
+    "longitude": -122.351503,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "28624469",
@@ -8404,7 +11094,17 @@
     "fullBaths": 2,
     "totalBaths": 2.5,
     "latitude": 47.612987,
-    "longitude": -122.339306
+    "longitude": -122.339306,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "108964",
@@ -8437,7 +11137,17 @@
     "fullBaths": 1,
     "totalBaths": 1.0,
     "latitude": 47.6882152,
-    "longitude": -122.3145911
+    "longitude": -122.3145911,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "51660",
@@ -8470,7 +11180,17 @@
     "fullBaths": 2,
     "totalBaths": 2.0,
     "latitude": 47.6585377,
-    "longitude": -122.3517893
+    "longitude": -122.3517893,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "494233",
@@ -8503,7 +11223,17 @@
     "fullBaths": 3,
     "totalBaths": 3.0,
     "latitude": 47.6692141,
-    "longitude": -122.3684058
+    "longitude": -122.3684058,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "135323",
@@ -8536,7 +11266,17 @@
     "fullBaths": 3,
     "totalBaths": 3.5,
     "latitude": 47.6405632,
-    "longitude": -122.319358
+    "longitude": -122.319358,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "201088524",
@@ -8569,7 +11309,17 @@
     "fullBaths": 2,
     "totalBaths": 2.0,
     "latitude": 47.6728232,
-    "longitude": -122.3892776
+    "longitude": -122.3892776,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "12536641",
@@ -8602,7 +11352,17 @@
     "fullBaths": 1,
     "totalBaths": 1.0,
     "latitude": 47.6130989,
-    "longitude": -122.3165619
+    "longitude": -122.3165619,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "8189671",
@@ -8635,7 +11395,17 @@
     "fullBaths": 2,
     "totalBaths": 2.5,
     "latitude": 47.6371761,
-    "longitude": -122.3708611
+    "longitude": -122.3708611,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "69867",
@@ -8668,7 +11438,17 @@
     "fullBaths": 1,
     "totalBaths": 1.5,
     "latitude": 47.6972919,
-    "longitude": -122.3383841
+    "longitude": -122.3383841,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "136889",
@@ -8701,7 +11481,17 @@
     "fullBaths": 2,
     "totalBaths": 2.0,
     "latitude": 47.6498487,
-    "longitude": -122.3202602
+    "longitude": -122.3202602,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "72475",
@@ -8734,7 +11524,17 @@
     "fullBaths": 1,
     "totalBaths": 1.0,
     "latitude": 47.5823835,
-    "longitude": -122.3853712
+    "longitude": -122.3853712,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "2096956",
@@ -8767,7 +11567,17 @@
     "fullBaths": 2,
     "totalBaths": 2.5,
     "latitude": 47.5551255,
-    "longitude": -122.3620075
+    "longitude": -122.3620075,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "28624793",
@@ -8800,7 +11610,17 @@
     "fullBaths": 1,
     "totalBaths": 1.0,
     "latitude": 47.595258,
-    "longitude": -122.310113
+    "longitude": -122.310113,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "103957225",
@@ -8833,7 +11653,17 @@
     "fullBaths": 1,
     "totalBaths": 1.0,
     "latitude": 47.6177748,
-    "longitude": -122.3367197
+    "longitude": -122.3367197,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "139075",
@@ -8866,7 +11696,17 @@
     "fullBaths": 2,
     "totalBaths": 2.5,
     "latitude": 47.6359566,
-    "longitude": -122.2799825
+    "longitude": -122.2799825,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "169465",
@@ -8899,7 +11739,17 @@
     "fullBaths": 2,
     "totalBaths": 2.0,
     "latitude": 47.5859797,
-    "longitude": -122.317515
+    "longitude": -122.317515,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "170556",
@@ -8932,7 +11782,17 @@
     "fullBaths": 2,
     "totalBaths": 2.0,
     "latitude": 47.5864632,
-    "longitude": -122.2958321
+    "longitude": -122.2958321,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "185870095",
@@ -8965,7 +11825,17 @@
     "fullBaths": 2,
     "totalBaths": 2.5,
     "latitude": 47.6940926,
-    "longitude": -122.3627324
+    "longitude": -122.3627324,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "17068017",
@@ -8998,7 +11868,17 @@
     "fullBaths": 1,
     "totalBaths": 1.0,
     "latitude": 47.6183468,
-    "longitude": -122.3248349
+    "longitude": -122.3248349,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "34593",
@@ -9031,7 +11911,17 @@
     "fullBaths": 1,
     "totalBaths": 1.0,
     "latitude": 47.6256356,
-    "longitude": -122.3555522
+    "longitude": -122.3555522,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "60900",
@@ -9064,7 +11954,17 @@
     "fullBaths": 1,
     "totalBaths": 1.0,
     "latitude": 47.6179491,
-    "longitude": -122.3248639
+    "longitude": -122.3248639,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "123390",
@@ -9097,7 +11997,17 @@
     "fullBaths": 2,
     "totalBaths": 2.0,
     "latitude": 47.649049647,
-    "longitude": -122.3871457
+    "longitude": -122.3871457,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "176358976",
@@ -9130,7 +12040,17 @@
     "fullBaths": 2,
     "totalBaths": 2.0,
     "latitude": 47.6002447,
-    "longitude": -122.3280012
+    "longitude": -122.3280012,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "40080074",
@@ -9163,7 +12083,17 @@
     "fullBaths": 2,
     "totalBaths": 2.5,
     "latitude": 47.6988999,
-    "longitude": -122.3460191
+    "longitude": -122.3460191,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "12319134",
@@ -9196,7 +12126,17 @@
     "fullBaths": 2,
     "totalBaths": 2.5,
     "latitude": 47.6120085,
-    "longitude": -122.2955478
+    "longitude": -122.2955478,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "19647",
@@ -9229,7 +12169,17 @@
     "fullBaths": 2,
     "totalBaths": 2.0,
     "latitude": 47.722657,
-    "longitude": -122.297048
+    "longitude": -122.297048,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "23708",
@@ -9262,7 +12212,17 @@
     "fullBaths": 2,
     "totalBaths": 2.0,
     "latitude": 47.5655968,
-    "longitude": -122.4073984
+    "longitude": -122.4073984,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "36033",
@@ -9295,7 +12255,17 @@
     "fullBaths": 2,
     "totalBaths": 2.0,
     "latitude": 47.71756,
-    "longitude": -122.2924418
+    "longitude": -122.2924418,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "471434",
@@ -9328,7 +12298,17 @@
     "fullBaths": 2,
     "totalBaths": 2.0,
     "latitude": 47.5458763,
-    "longitude": -122.3860657
+    "longitude": -122.3860657,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "173655994",
@@ -9361,7 +12341,17 @@
     "fullBaths": 2,
     "totalBaths": 2.5,
     "latitude": 47.6662396,
-    "longitude": -122.3693384
+    "longitude": -122.3693384,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "473383",
@@ -9394,7 +12384,17 @@
     "fullBaths": 1,
     "totalBaths": 1.0,
     "latitude": 47.517865,
-    "longitude": -122.36564
+    "longitude": -122.36564,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "8190214",
@@ -9427,7 +12427,17 @@
     "fullBaths": 1,
     "totalBaths": 1.0,
     "latitude": 47.6311352,
-    "longitude": -122.3523259
+    "longitude": -122.3523259,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "46295",
@@ -9460,7 +12470,17 @@
     "fullBaths": 1,
     "totalBaths": 1.0,
     "latitude": 47.7211517,
-    "longitude": -122.2911406
+    "longitude": -122.2911406,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "40080063",
@@ -9493,7 +12513,17 @@
     "fullBaths": 2,
     "totalBaths": 2.5,
     "latitude": 47.6990682,
-    "longitude": -122.3461104
+    "longitude": -122.3461104,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "28582061",
@@ -9526,7 +12556,17 @@
     "fullBaths": 3,
     "totalBaths": 3.5,
     "latitude": 47.5876506,
-    "longitude": -122.3151462
+    "longitude": -122.3151462,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "14476",
@@ -9559,7 +12599,17 @@
     "fullBaths": 2,
     "totalBaths": 2.0,
     "latitude": 47.7169934,
-    "longitude": -122.3121622
+    "longitude": -122.3121622,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "2092501",
@@ -9592,7 +12642,17 @@
     "fullBaths": 1,
     "totalBaths": 1.0,
     "latitude": 47.636816,
-    "longitude": -122.343614
+    "longitude": -122.343614,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "72810",
@@ -9625,7 +12685,17 @@
     "fullBaths": 2,
     "totalBaths": 2.0,
     "latitude": 47.6493508,
-    "longitude": -122.3830053
+    "longitude": -122.3830053,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "179934346",
@@ -9658,7 +12728,17 @@
     "fullBaths": 2,
     "totalBaths": 2.0,
     "latitude": 47.5657879,
-    "longitude": -122.3722655
+    "longitude": -122.3722655,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "21595",
@@ -9691,7 +12771,17 @@
     "fullBaths": 1,
     "totalBaths": 1.0,
     "latitude": 47.613898,
-    "longitude": -122.344043
+    "longitude": -122.344043,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "313373",
@@ -9724,7 +12814,17 @@
     "fullBaths": 3,
     "totalBaths": 3.0,
     "latitude": 47.6746964,
-    "longitude": -122.2877298
+    "longitude": -122.2877298,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "26451",
@@ -9757,7 +12857,17 @@
     "fullBaths": 2,
     "totalBaths": 2.0,
     "latitude": 47.6185137,
-    "longitude": -122.3226743
+    "longitude": -122.3226743,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "12538054",
@@ -9790,7 +12900,17 @@
     "fullBaths": 2,
     "totalBaths": 2.0,
     "latitude": 47.6604493,
-    "longitude": -122.3986153
+    "longitude": -122.3986153,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "182630821",
@@ -9823,7 +12943,17 @@
     "fullBaths": 1,
     "totalBaths": 1.5,
     "latitude": 47.529266,
-    "longitude": -122.321887
+    "longitude": -122.321887,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "50404",
@@ -9856,7 +12986,17 @@
     "fullBaths": 2,
     "totalBaths": 2.0,
     "latitude": 47.6713964,
-    "longitude": -122.3793376
+    "longitude": -122.3793376,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "191510312",
@@ -9889,7 +13029,17 @@
     "fullBaths": 2,
     "totalBaths": 2.5,
     "latitude": 47.7274582,
-    "longitude": -122.3569893
+    "longitude": -122.3569893,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "304116",
@@ -9922,7 +13072,17 @@
     "fullBaths": 1,
     "totalBaths": 1.5,
     "latitude": 47.6652392,
-    "longitude": -122.3390868
+    "longitude": -122.3390868,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "101611150",
@@ -9955,7 +13115,17 @@
     "fullBaths": 2,
     "totalBaths": 2.0,
     "latitude": 47.6749345,
-    "longitude": -122.3926428
+    "longitude": -122.3926428,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "12091357",
@@ -9988,7 +13158,17 @@
     "fullBaths": 2,
     "totalBaths": 2.0,
     "latitude": 47.6172912,
-    "longitude": -122.3358101
+    "longitude": -122.3358101,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "18971",
@@ -10021,7 +13201,17 @@
     "fullBaths": 2,
     "totalBaths": 2.0,
     "latitude": 47.613898,
-    "longitude": -122.344043
+    "longitude": -122.344043,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "21883517",
@@ -10054,7 +13244,17 @@
     "fullBaths": 1,
     "totalBaths": 1.0,
     "latitude": 47.6628143,
-    "longitude": -122.3199182
+    "longitude": -122.3199182,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "22717148",
@@ -10087,7 +13287,17 @@
     "fullBaths": 2,
     "totalBaths": 2.5,
     "latitude": 47.4961694,
-    "longitude": -122.2344263
+    "longitude": -122.2344263,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "2084728",
@@ -10120,7 +13330,17 @@
     "fullBaths": 1,
     "totalBaths": 1.0,
     "latitude": 47.5583476,
-    "longitude": -122.3818049
+    "longitude": -122.3818049,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "114012581",
@@ -10153,7 +13373,17 @@
     "fullBaths": 1,
     "totalBaths": 1.0,
     "latitude": 47.5959742,
-    "longitude": -122.3336151
+    "longitude": -122.3336151,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "22214",
@@ -10186,7 +13416,17 @@
     "fullBaths": 1,
     "totalBaths": 1.0,
     "latitude": 47.6325964,
-    "longitude": -122.3197679
+    "longitude": -122.3197679,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "51136",
@@ -10219,7 +13459,17 @@
     "fullBaths": 2,
     "totalBaths": 2.0,
     "latitude": 47.6334617,
-    "longitude": -122.2762716
+    "longitude": -122.2762716,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "66624",
@@ -10252,7 +13502,17 @@
     "fullBaths": 1,
     "totalBaths": 1.0,
     "latitude": 47.7131801,
-    "longitude": -122.3121807
+    "longitude": -122.3121807,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "17844",
@@ -10285,7 +13545,17 @@
     "fullBaths": 1,
     "totalBaths": 1.0,
     "latitude": 47.60671,
-    "longitude": -122.323288
+    "longitude": -122.323288,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "143361",
@@ -10318,7 +13588,17 @@
     "fullBaths": 2,
     "totalBaths": 2.0,
     "latitude": 47.6131029,
-    "longitude": -122.3071641
+    "longitude": -122.3071641,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "12305382",
@@ -10351,7 +13631,17 @@
     "fullBaths": 1,
     "totalBaths": 1.0,
     "latitude": 47.6543608,
-    "longitude": -122.3583849
+    "longitude": -122.3583849,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "14993",
@@ -10384,7 +13674,17 @@
     "fullBaths": 1,
     "totalBaths": 1.0,
     "latitude": 47.6163178,
-    "longitude": -122.352084
+    "longitude": -122.352084,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "175478851",
@@ -10417,7 +13717,17 @@
     "fullBaths": 3,
     "totalBaths": 3.0,
     "latitude": 47.6875401,
-    "longitude": -122.3785203
+    "longitude": -122.3785203,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "48311",
@@ -10450,7 +13760,17 @@
     "fullBaths": 1,
     "totalBaths": 1.0,
     "latitude": 47.6161181,
-    "longitude": -122.3497603
+    "longitude": -122.3497603,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "49967",
@@ -10483,7 +13803,17 @@
     "fullBaths": 1,
     "totalBaths": 1.0,
     "latitude": 47.6322073,
-    "longitude": -122.3429783
+    "longitude": -122.3429783,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "141932",
@@ -10516,7 +13846,17 @@
     "fullBaths": 1,
     "totalBaths": 1.0,
     "latitude": 47.5930111,
-    "longitude": -122.290606
+    "longitude": -122.290606,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "12538193",
@@ -10549,7 +13889,17 @@
     "fullBaths": 1,
     "totalBaths": 1.0,
     "latitude": 47.5412466,
-    "longitude": -122.3867841
+    "longitude": -122.3867841,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "111607",
@@ -10582,7 +13932,17 @@
     "fullBaths": 3,
     "totalBaths": 3.0,
     "latitude": 47.7211185,
-    "longitude": -122.2893639
+    "longitude": -122.2893639,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "2076667",
@@ -10615,7 +13975,17 @@
     "fullBaths": 2,
     "totalBaths": 2.0,
     "latitude": 47.6113483,
-    "longitude": -122.3261191
+    "longitude": -122.3261191,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "302148",
@@ -10648,7 +14018,17 @@
     "fullBaths": 1,
     "totalBaths": 1.0,
     "latitude": 47.6684354,
-    "longitude": -122.3678822
+    "longitude": -122.3678822,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "175091714",
@@ -10681,7 +14061,17 @@
     "fullBaths": 2,
     "totalBaths": 2.5,
     "latitude": 47.5696298,
-    "longitude": -122.3870281
+    "longitude": -122.3870281,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "181270260",
@@ -10714,7 +14104,17 @@
     "fullBaths": 2,
     "totalBaths": 2.0,
     "latitude": 47.594501,
-    "longitude": -122.296857
+    "longitude": -122.296857,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "192272666",
@@ -10747,7 +14147,17 @@
     "fullBaths": 2,
     "totalBaths": 2.0,
     "latitude": 47.7354495,
-    "longitude": -122.3543014
+    "longitude": -122.3543014,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "12280751",
@@ -10780,7 +14190,17 @@
     "fullBaths": 1,
     "totalBaths": 1.0,
     "latitude": 47.6592427,
-    "longitude": -122.3184878
+    "longitude": -122.3184878,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "34433",
@@ -10813,7 +14233,17 @@
     "fullBaths": 2,
     "totalBaths": 2.0,
     "latitude": 47.617312923,
-    "longitude": -122.3515648
+    "longitude": -122.3515648,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "28623819",
@@ -10846,7 +14276,17 @@
     "fullBaths": 1,
     "totalBaths": 1.0,
     "latitude": 47.618062,
-    "longitude": -122.339141
+    "longitude": -122.339141,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "306235",
@@ -10879,7 +14319,17 @@
     "fullBaths": 2,
     "totalBaths": 2.5,
     "latitude": 47.6774314,
-    "longitude": -122.3242798
+    "longitude": -122.3242798,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "171920893",
@@ -10912,7 +14362,17 @@
     "fullBaths": 4,
     "totalBaths": 4.0,
     "latitude": 47.4960336,
-    "longitude": -122.2342354
+    "longitude": -122.2342354,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "201263274",
@@ -10943,7 +14403,17 @@
     "fullBaths": null,
     "totalBaths": null,
     "latitude": 47.62439,
-    "longitude": -122.276123
+    "longitude": -122.276123,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "201258942",
@@ -10974,7 +14444,17 @@
     "fullBaths": null,
     "totalBaths": null,
     "latitude": 47.6741323,
-    "longitude": -122.2866972
+    "longitude": -122.2866972,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "188747293",
@@ -11007,7 +14487,17 @@
     "fullBaths": null,
     "totalBaths": null,
     "latitude": 47.605301,
-    "longitude": -122.310649
+    "longitude": -122.310649,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   },
   {
     "propertyId": "194693116",
@@ -11040,6 +14530,16 @@
     "fullBaths": null,
     "totalBaths": null,
     "latitude": 47.515296,
-    "longitude": -122.3709054
+    "longitude": -122.3709054,
+    "parsed_description": null,
+    "parsed_image_urls": [],
+    "parsed_parking": {
+      "has_parking": false,
+      "spaces": null,
+      "label": null
+    },
+    "parsed_property_type": null,
+    "parsed_property_details": {},
+    "parsed_sqft": null
   }
 ]

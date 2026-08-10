@@ -3,7 +3,7 @@ import re
 
 from pydantic import ValidationError
 
-from llm.ollama_client import call_ollama
+from llm.openai_client import call_llm
 from llm.prompts import build_intent_classifier_prompt
 from models.intent import IntentResult
 
@@ -36,7 +36,7 @@ def classify_intent_tool(
         current_context=current_context,
         current_booking=current_booking,
     )
-    llm_output = call_ollama(prompt)
+    llm_output = call_llm(prompt)
 
     print("=== RAW LLM OUTPUT ===")
     print(llm_output)

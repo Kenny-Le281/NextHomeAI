@@ -37,9 +37,15 @@ The app combines a React frontend, a Python backend, an LLM-powered agent, a Pos
 Create a `.env` file at the project root:
 
 ```env
+OPENAI_API_KEY=your_openai_api_key
+OPENAI_MODEL=gpt-5.6-luna
+OPENAI_TIMEOUT_SECONDS=180
 SUPABASE_DB_PASSWORD=your_supabase_database_password
 REDFIN_KEY=your_redfinapi_key_if_used
 ```
+
+`OPENAI_MODEL` and `OPENAI_TIMEOUT_SECONDS` are optional. The defaults shown above
+are used when they are omitted.
 
 Create a frontend `.env` file inside `Frontend/`:
 
@@ -99,19 +105,11 @@ The frontend should run at:
 http://localhost:5173
 ```
 
-## Local services required
+## OpenAI API
 
-The backend expects Ollama to be running locally if using the configured Ollama client:
-
-```bash
-ollama serve
-```
-
-The configured model should also be available locally:
-
-```bash
-ollama pull llama3.1:latest
-```
+The backend calls the OpenAI Responses API. Add your API key to the project-root
+`.env` file before starting the backend. The key is read only by the Python backend;
+do not add it to `Frontend/.env` or expose it through a `VITE_` variable.
 
 ## API response shape
 

@@ -6,7 +6,7 @@ from pathlib import Path
 
 from fetch_html import fetch_html
 from parse_description_from_html import parse_description_from_html
-from parse_image_urls_from_html import parse_image_urls_from_html
+from parse_image_urls_from_html import parse_image_urls_from_html, resolve_image_urls
 from parse_parking_from_html import parse_parking_from_html
 from parse_property_type_from_html import parse_property_type_from_html
 from parse_property_details_from_html import parse_property_details_from_html
@@ -37,10 +37,18 @@ def process_file(input_path: Path):
             continue
 
         full_url = BASE_URL + url
-        html_content = fetch_html(full_url)
+        try:
+            html_content = fetch_html(full_url)
+        except Exception as exception:
+            print(f"Could not fetch property page; preserving existing data: {exception}")
+            continue
 
         property["parsed_description"] = parse_description_from_html(html_content)
-        property["parsed_image_urls"] = parse_image_urls_from_html(html_content)
+        extracted_image_urls = parse_image_urls_from_html(html_content)
+        api_image_urls = property.get("parsed_image_urls") or []
+        property["parsed_image_urls"] = resolve_image_urls(
+            list(dict.fromkeys([*extracted_image_urls, *api_image_urls]))
+        )
         property["parsed_parking"] = parse_parking_from_html(html_content)
         property["parsed_property_type"] = parse_property_type_from_html(html_content)
         property["parsed_property_details"] = parse_property_details_from_html(html_content)
@@ -80,5 +88,3 @@ def main(input_path: Path | str = DEFAULT_CITY_DIR):
 
 if __name__ == "__main__":
     main()
-
-    

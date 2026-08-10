@@ -53,7 +53,39 @@ def select_fields(raw: dict):
     out = {}
     for src_path, dest_key in FIELDS_TO_KEEP:
         out[dest_key] = pick_field(raw, src_path)
+    out["parsed_image_urls"] = build_photo_urls(raw.get("homeData", {}))
     return out
+
+
+def build_photo_urls(home_data: dict) -> list[str]:
+    """Build Redfin CDN photo URLs from metadata in the search API response."""
+    mls_id = home_data.get("mlsId")
+    data_source_id = home_data.get("dataSourceId")
+    photo_ranges = (home_data.get("photosInfo") or {}).get("photoRanges") or []
+
+    if not mls_id or data_source_id is None or not photo_ranges:
+        return []
+
+    shard = str(mls_id)[-3:]
+    base_url = (
+        f"https://ssl.cdn-redfin.com/photo/{data_source_id}/"
+        f"bigphoto/{shard}/{mls_id}"
+    )
+    urls = []
+
+    for photo_range in photo_ranges:
+        try:
+            start = int(photo_range["startPos"])
+            end = int(photo_range["endPos"])
+            version = str(photo_range["version"])
+        except (KeyError, TypeError, ValueError):
+            continue
+
+        for position in range(start, end + 1):
+            suffix = f"_{version}" if position == 0 else f"_{position}_{version}"
+            urls.append(f"{base_url}{suffix}.jpg")
+
+    return list(dict.fromkeys(urls))
 
 # --- main pipeline --------------------------------------------------------
 def build_selected_json(input_path: Path, output_path: Path):

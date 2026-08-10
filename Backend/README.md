@@ -24,6 +24,7 @@ From the `Backend/` folder:
 
 ```bash
 python -m pip install -r requirements.txt
+```
 
 Install Playwright browser binaries:
 
@@ -36,11 +37,15 @@ playwright install
 Create a `.env` file at the project root, not inside `Backend/`:
 
 ```env
+OPENAI_API_KEY=your_openai_api_key
+OPENAI_MODEL=gpt-5.6-luna
+OPENAI_TIMEOUT_SECONDS=180
 SUPABASE_DB_PASSWORD=your_supabase_database_password
 REDFIN_KEY=your_redfin_key_if_used
 ```
 
-Do not commit real credentials.
+`OPENAI_MODEL` and `OPENAI_TIMEOUT_SECONDS` are optional. Do not commit real
+credentials.
 
 ## Running the backend
 
@@ -206,27 +211,17 @@ The system asks for final confirmation before submitting a showing request.
 
 ## LLM setup
 
-The backend uses Ollama by default.
+The backend uses the OpenAI Responses API. Add these values to the `.env` file at
+the project root:
 
-Start Ollama:
-
-```bash
-ollama serve
+```env
+OPENAI_API_KEY=your_openai_api_key
+OPENAI_MODEL=gpt-5.6-luna
+OPENAI_TIMEOUT_SECONDS=180
 ```
 
-Pull the configured model:
-
-```bash
-ollama pull llama3.1:latest
-```
-
-The Ollama config is stored in `config.py`:
-
-```python
-OLLAMA_URL = "http://localhost:11434/api/chat"
-MODEL_NAME = "llama3.1:latest"
-OLLAMA_TIMEOUT_SECONDS = 180
-```
+Only `OPENAI_API_KEY` is required. The model and timeout have the defaults shown
+above. Keep the key on the backend and never place it in `Frontend/.env`.
 
 ## Common issues
 

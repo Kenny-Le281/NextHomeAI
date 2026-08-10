@@ -1,4 +1,4 @@
-from llm.ollama_client import call_ollama
+from llm.openai_client import call_llm
 from llm.prompts import build_normal_chat_prompt
 
 
@@ -14,4 +14,4 @@ def normal_chat_tool(
         current_context=current_context,
         current_booking=current_booking,
     )
-    return call_ollama(prompt).strip()
+    return call_llm(prompt).strip()

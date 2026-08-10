@@ -1,4 +1,4 @@
-from llm.ollama_client import call_ollama
+from llm.openai_client import call_llm
 from llm.prompts import (
     build_missing_info_response_prompt,
     build_completion_response_prompt,
@@ -15,14 +15,14 @@ def generate_missing_info_reply_service(filters: HousingFilters, missing_fields:
         current_filters=filters.model_dump(mode="json"),
         missing_fields=missing_fields,
     )
-    return call_ollama(prompt).strip()
+    return call_llm(prompt).strip()
 
 
 def generate_completion_reply_service(filters: HousingFilters) -> str:
     prompt = build_completion_response_prompt(
         current_filters=filters.model_dump(mode="json")
     )
-    return call_ollama(prompt).strip()
+    return call_llm(prompt).strip()
 
 
 def generate_listings_summary_service(filters: HousingFilters, listings: list[dict]) -> str:
@@ -30,7 +30,7 @@ def generate_listings_summary_service(filters: HousingFilters, listings: list[di
         current_filters=filters.model_dump(mode="json"),
         listings=listings,
     )
-    return call_ollama(prompt).strip()
+    return call_llm(prompt).strip()
 
 
 
@@ -39,11 +39,11 @@ def generate_missing_booking_reply_service(booking: BookingRequest, missing_fiel
         current_booking=booking.model_dump(mode="json"),
         missing_fields=missing_fields,
     )
-    return call_ollama(prompt).strip()
+    return call_llm(prompt).strip()
 
 
 def generate_booking_completion_reply_service(booking: BookingRequest) -> str:
     prompt = build_booking_completion_prompt(
         current_booking=booking.model_dump(mode="json")
     )
-    return call_ollama(prompt).strip()
+    return call_llm(prompt).strip()

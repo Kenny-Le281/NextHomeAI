@@ -1,4 +1,10 @@
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import {
+  getListingImages,
+  NO_IMAGE_URL,
+  resolveFirstListingImage,
+} from "../utils/listingImages";
 
 const PROPERTY_TYPE_LABELS = {
   3: "Condo",
@@ -25,31 +31,26 @@ function getPropertyTypeLabel(listing) {
   return String(rawValue);
 }
 
-function getListingImages(listing) {
-  if (Array.isArray(listing.image_urls)) {
-    return listing.image_urls.filter(Boolean);
-  }
-
-  if (Array.isArray(listing.photos)) {
-    return listing.photos.filter(Boolean);
-  }
-
-  const singleImage =
-    listing.main_image ||
-    listing.image_url ||
-    listing.photo_url ||
-    null;
-
-  return singleImage ? [singleImage] : [];
-}
-
 function ListingCard({ listing }) {
   const listingId = listing.listing_id || listing.property_id || listing.id;
-
   const images = getListingImages(listing);
+  const imageKey = images.join("\n");
+  const [imageUrl, setImageUrl] = useState(NO_IMAGE_URL);
 
-  const imageUrl =
-    images[0] || "https://placehold.co/600x400?text=No+Image";
+  useEffect(() => {
+    let cancelled = false;
+    const sourceImages = imageKey ? imageKey.split("\n") : [];
+
+    resolveFirstListingImage(sourceImages).then((resolvedImage) => {
+      if (!cancelled) {
+        setImageUrl(resolvedImage || NO_IMAGE_URL);
+      }
+    });
+
+    return () => {
+      cancelled = true;
+    };
+  }, [imageKey]);
 
   const price =
     listing.price !== null && listing.price !== undefined

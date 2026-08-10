@@ -3,7 +3,7 @@ import re
 
 from pydantic import ValidationError
 
-from llm.ollama_client import call_ollama
+from llm.openai_client import call_llm
 from llm.prompts import build_booking_parser_prompt
 from models.booking_request import BookingParseResult
 
@@ -34,7 +34,7 @@ def parse_booking_request_tool(
         current_booking=current_booking,
         current_context=current_context,
     )
-    llm_output = call_ollama(prompt)
+    llm_output = call_llm(prompt)
 
     print("=== BOOKING USER MESSAGE ===")
     print(user_message)

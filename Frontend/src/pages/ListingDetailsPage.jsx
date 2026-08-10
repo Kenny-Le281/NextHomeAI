@@ -1,5 +1,10 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Link, useLocation, useParams } from "react-router-dom";
+import {
+  getListingImages,
+  NO_IMAGE_URL,
+  resolveListingImages,
+} from "../utils/listingImages";
 
 const PROPERTY_TYPE_LABELS = {
   3: "Condo",
@@ -24,24 +29,6 @@ function getPropertyTypeLabel(listing) {
   }
 
   return String(rawValue);
-}
-
-function getListingImages(listing) {
-  if (Array.isArray(listing?.image_urls)) {
-    return listing.image_urls.filter(Boolean);
-  }
-
-  if (Array.isArray(listing?.photos)) {
-    return listing.photos.filter(Boolean);
-  }
-
-  const singleImage =
-    listing?.main_image ||
-    listing?.image_url ||
-    listing?.photo_url ||
-    null;
-
-  return singleImage ? [singleImage] : [];
 }
 
 function getListingUrl(listing) {
@@ -107,21 +94,39 @@ function DetailRow({ label, value }) {
 
 function ListingImageGallery({ images, address }) {
   const [selectedIndex, setSelectedIndex] = useState(0);
+  const [resolvedImages, setResolvedImages] = useState([]);
+  const imageKey = images.join("\n");
 
-  const hasImages = images.length > 0;
+  useEffect(() => {
+    let cancelled = false;
+    const sourceImages = imageKey ? imageKey.split("\n") : [];
+
+    resolveListingImages(sourceImages).then((validImages) => {
+      if (!cancelled) {
+        setSelectedIndex(0);
+        setResolvedImages(validImages);
+      }
+    });
+
+    return () => {
+      cancelled = true;
+    };
+  }, [imageKey]);
+
+  const hasImages = resolvedImages.length > 0;
   const selectedImage = hasImages
-    ? images[selectedIndex]
-    : "https://placehold.co/900x500?text=No+Image";
+    ? resolvedImages[selectedIndex]
+    : NO_IMAGE_URL;
 
   function showPrevious() {
     setSelectedIndex((currentIndex) =>
-      currentIndex === 0 ? images.length - 1 : currentIndex - 1
+      currentIndex === 0 ? resolvedImages.length - 1 : currentIndex - 1
     );
   }
 
   function showNext() {
     setSelectedIndex((currentIndex) =>
-      currentIndex === images.length - 1 ? 0 : currentIndex + 1
+      currentIndex === resolvedImages.length - 1 ? 0 : currentIndex + 1
     );
   }
 
@@ -130,14 +135,14 @@ function ListingImageGallery({ images, address }) {
       <div className="details-image-wrapper">
         <img src={selectedImage} alt={address || "Property"} />
 
-        {images.length > 1 && (
+        {resolvedImages.length > 1 && (
           <div className="gallery-controls">
             <button type="button" onClick={showPrevious}>
               Previous
             </button>
 
             <span>
-              {selectedIndex + 1} / {images.length}
+              {selectedIndex + 1} / {resolvedImages.length}
             </span>
 
             <button type="button" onClick={showNext}>
@@ -147,9 +152,9 @@ function ListingImageGallery({ images, address }) {
         )}
       </div>
 
-      {images.length > 1 && (
+      {resolvedImages.length > 1 && (
         <div className="thumbnail-strip" aria-label="Listing images">
-          {images.map((image, index) => (
+          {resolvedImages.map((image, index) => (
             <button
               key={image}
               type="button"

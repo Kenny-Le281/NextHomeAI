@@ -85,7 +85,10 @@ DO UPDATE SET
     total_baths = EXCLUDED.total_baths,
     latitude = EXCLUDED.latitude,
     longitude = EXCLUDED.longitude,
-    image_urls = EXCLUDED.image_urls,
+    image_urls = COALESCE(
+        NULLIF(EXCLUDED.image_urls, '[]'::jsonb),
+        listings.image_urls
+    ),
     sqft = EXCLUDED.sqft,
     raw = EXCLUDED.raw,
     last_updated = NOW();
