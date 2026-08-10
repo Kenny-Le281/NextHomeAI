@@ -12,8 +12,8 @@ sys.path.insert(0, str(repo_root))
 sys.path.insert(0, str(repo_root / "Backend" / "web-scraping"))
 
 from Get_Region_Ids_helper import get_region_ids_for_runner
-from Backend.API.api_property_response import fetch_properties_for_region
-from Backend.API.consolidation import build_selected_json
+from Backend.api.api_property_response import fetch_properties_for_region
+from Backend.api.consolidation import build_selected_json
 from web_scraper import main as run_web_scraper
 from load_listings import load_from_file as load_listings, get_connection
 
