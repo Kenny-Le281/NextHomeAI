@@ -1,19 +1,49 @@
-from dotenv import load_dotenv
 import json
-import os
 import psycopg2
 
-load_dotenv()
+from Backend.config import (
+    DATABASE_CONNECT_TIMEOUT_SECONDS,
+    DATABASE_HOST,
+    DATABASE_NAME,
+    DATABASE_PASSWORD,
+    DATABASE_PORT,
+    DATABASE_SSLMODE,
+    DATABASE_URL,
+    DATABASE_USER,
+)
 
 
 def get_connection():
+    if DATABASE_URL:
+        return psycopg2.connect(
+            DATABASE_URL,
+            connect_timeout=DATABASE_CONNECT_TIMEOUT_SECONDS,
+        )
+
+    missing = [
+        name
+        for name, value in (
+            ("DATABASE_HOST", DATABASE_HOST),
+            ("DATABASE_USER", DATABASE_USER),
+            ("DATABASE_PASSWORD", DATABASE_PASSWORD),
+        )
+        if not value
+    ]
+    if missing:
+        raise RuntimeError(
+            "Database configuration is incomplete. Set DATABASE_URL or provide: "
+            + ", ".join(missing)
+            + "."
+        )
+
     return psycopg2.connect(
-        dbname="postgres",
-        user="postgres.uajcmeseaipjrplvndrp",
-        password=os.getenv("SUPABASE_DB_PASSWORD"),
-        host="aws-1-ca-central-1.pooler.supabase.com",
-        port=5432,
-        sslmode="require",
+        dbname=DATABASE_NAME,
+        user=DATABASE_USER,
+        password=DATABASE_PASSWORD,
+        host=DATABASE_HOST,
+        port=DATABASE_PORT,
+        sslmode=DATABASE_SSLMODE,
+        connect_timeout=DATABASE_CONNECT_TIMEOUT_SECONDS,
     )
 
 
@@ -102,26 +132,25 @@ def load_from_file(path, conn=None):
         conn = get_connection()
         conn.autocommit = True
 
-    cur = conn.cursor()
+    try:
+        with open(path, "r", encoding="utf-8") as f:
+            data = json.load(f)
 
-    with open(path, "r", encoding="utf-8") as f:
-        data = json.load(f)
+        if isinstance(data, dict):
+            data = [data]
 
-    if isinstance(data, dict):
-        data = [data]
-
-    count = 0
-    for raw in data:
-        listing = normalize_listing(raw)
-        if not listing["listing_id"]:
-            print("Skipping listing without listing_id")
-            continue
-        cur.execute(UPSERT_SQL, listing)
-        count += 1
-
-    cur.close()
-    if own_conn:
-        conn.close()
+        count = 0
+        with conn.cursor() as cur:
+            for raw in data:
+                listing = normalize_listing(raw)
+                if not listing["listing_id"]:
+                    print("Skipping listing without listing_id")
+                    continue
+                cur.execute(UPSERT_SQL, listing)
+                count += 1
+    finally:
+        if own_conn:
+            conn.close()
 
     print(f"Loaded {count} listings from {path}")
     return count
@@ -135,14 +164,14 @@ def load_all_regions(city_dir="Ottawa"):
     conn = get_connection()
     conn.autocommit = True
     total = 0
-
-    for region_dir in sorted(city_path.iterdir()):
-        selected = region_dir / "selected.json"
-        if region_dir.is_dir() and selected.exists():
-            print(f"\n--- Loading: {region_dir.name} ---")
-            total += load_from_file(selected, conn=conn)
-
-    conn.close()
+    try:
+        for region_dir in sorted(city_path.iterdir()):
+            selected = region_dir / "selected.json"
+            if region_dir.is_dir() and selected.exists():
+                print(f"\n--- Loading: {region_dir.name} ---")
+                total += load_from_file(selected, conn=conn)
+    finally:
+        conn.close()
     print(f"\nDone. Loaded {total} total listings.")
 
 

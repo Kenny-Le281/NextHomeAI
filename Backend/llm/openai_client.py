@@ -27,13 +27,13 @@ def call_llm(prompt: str) -> str:
         )
     except APITimeoutError as exception:
         raise RuntimeError(
-            f"OpenAI request timed out after {OPENAI_TIMEOUT_SECONDS} seconds."
+            f"OpenAI request timed out after {OPENAI_TIMEOUT_SECONDS} seconds: {exception}"
         ) from exception
     except APIConnectionError as exception:
-        raise RuntimeError("Could not connect to the OpenAI API.") from exception
+        raise RuntimeError(f"Could not connect to the OpenAI API: {exception}") from exception
     except APIStatusError as exception:
         raise RuntimeError(
-            f"OpenAI API request failed with status {exception.status_code}."
+            f"OpenAI API request failed with status {exception.status_code}: {exception}"
         ) from exception
 
     output = response.output_text

@@ -19,7 +19,7 @@ The app combines a React frontend, a Python backend, an LLM-powered agent, a Pos
 - Accessibility-focused settings such as larger fonts, readable font style, high contrast, and reduced motion
 - Frontend session persistence using localStorage
 - Backend session storage by frontend session ID
-`
+
 ## Images
 <img width="1470" height="833" alt="Screenshot 2026-05-11 at 11 32 05 AM" src="https://github.com/user-attachments/assets/1b75bfb7-0f7b-4078-94ab-2d9586099646"/>
 <br>
@@ -40,12 +40,18 @@ Create a `.env` file at the project root:
 OPENAI_API_KEY=your_openai_api_key
 OPENAI_MODEL=gpt-5.6-luna
 OPENAI_TIMEOUT_SECONDS=180
-SUPABASE_DB_PASSWORD=your_supabase_database_password
+DATABASE_HOST=your_supabase_pooler_host
+DATABASE_PORT=5432
+DATABASE_NAME=postgres
+DATABASE_USER=your_supabase_database_user
+DATABASE_PASSWORD=your_supabase_database_password
+DATABASE_SSLMODE=require
+ALLOWED_ORIGINS=http://localhost:5173,http://127.0.0.1:5173
 REDFIN_KEY=your_redfinapi_key_if_used
 ```
 
-`OPENAI_MODEL` and `OPENAI_TIMEOUT_SECONDS` are optional. The defaults shown above
-are used when they are omitted.
+Copy [`.env.example`](.env.example) for the complete set of settings. `REDFIN_KEY`
+is only needed by the listing-ingestion runner, not by the web backend.
 
 Create a frontend `.env` file inside `Frontend/`:
 
@@ -91,6 +97,8 @@ You can test it at:
 http://localhost:8000/health
 ```
 
+`/health` is also used by the deployed container and load balancer.
+
 ### Frontend
 
 ```bash
@@ -110,6 +118,12 @@ http://localhost:5173
 The backend calls the OpenAI Responses API. Add your API key to the project-root
 `.env` file before starting the backend. The key is read only by the Python backend;
 do not add it to `Frontend/.env` or expose it through a `VITE_` variable.
+
+## Deployment
+
+The backend has a production Docker image and the frontend has an Amplify build
+specification. Follow [`DEPLOYMENT.md`](DEPLOYMENT.md) for the ECR, ECS/Fargate,
+Secrets Manager, load balancer, and Amplify setup.
 
 ## API response shape
 

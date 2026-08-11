@@ -96,7 +96,7 @@ function HomePage() {
           ...previousState.messages,
           {
             role: "assistant",
-            content: "Something went wrong while contacting the backend.",
+            content: `Something went wrong while contacting the backend: ${error.message}`,
           },
         ],
       }));

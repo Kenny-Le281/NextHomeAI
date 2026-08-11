@@ -15,8 +15,14 @@ export async function sendAgentMessage(message, sessionId) {
   const data = await response.json().catch(() => null);
 
   if (!response.ok) {
-    const detail = data?.detail || "Failed to contact backend.";
-    throw new Error(detail);
+    const rawDetail = data?.detail;
+    const detail = typeof rawDetail === "string"
+      ? rawDetail
+      : rawDetail
+        ? JSON.stringify(rawDetail)
+        : `Backend request failed with HTTP ${response.status} ${response.statusText}.`;
+    const requestId = response.headers.get("X-Request-ID");
+    throw new Error(requestId ? `${detail} (request ID: ${requestId})` : detail);
   }
 
   return data;

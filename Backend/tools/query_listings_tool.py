@@ -1,24 +1,26 @@
-import os
-import sys
-import psycopg2
 import json
-from dotenv import load_dotenv
 
-# Load .env from repo root
-load_dotenv(os.path.join(os.path.dirname(__file__), "..", "..", ".env"))
-
+from database import get_db_connection
 from models.housing_filters import HousingFilters
 
 
-def get_db_connection():
-    return psycopg2.connect(
-        dbname="postgres",
-        user="postgres.uajcmeseaipjrplvndrp",
-        password=os.getenv("SUPABASE_DB_PASSWORD"),
-        host="aws-1-ca-central-1.pooler.supabase.com",
-        port=5432,
-        sslmode="require",
-    )
+def _rows_to_records(cursor) -> list[dict]:
+    columns = [description[0] for description in cursor.description]
+    results = []
+    for row in cursor.fetchall():
+        record = {}
+        for column, value in zip(columns, row):
+            if hasattr(value, "as_tuple"):
+                record[column] = float(value)
+            elif column == "image_urls" and isinstance(value, str):
+                try:
+                    record[column] = json.loads(value)
+                except json.JSONDecodeError:
+                    record[column] = []
+            else:
+                record[column] = value
+        results.append(record)
+    return results
 
 
 def query_listings(filters: HousingFilters, limit: int = 20) -> list[dict]:
@@ -84,32 +86,13 @@ def query_listings(filters: HousingFilters, limit: int = 20) -> list[dict]:
     """
     params.append(limit)
 
-    conn = get_db_connection()
-    cur = conn.cursor()
-    cur.execute(sql, params)
-
-    columns = [desc[0] for desc in cur.description]
-    results = []
-    for row in cur.fetchall():
-        record = {}
-
-        for col, val in zip(columns, row):
-            if hasattr(val, "as_tuple"):
-                record[col] = float(val)
-            elif col == "image_urls" and isinstance(val, str):
-                try:
-                    record[col] = json.loads(val)
-                except json.JSONDecodeError:
-                    record[col] = []
-            else:
-                record[col] = val
-
-        results.append(record)
-
-    cur.close()
-    conn.close()
-
-    return results
+    connection = get_db_connection()
+    try:
+        with connection.cursor() as cursor:
+            cursor.execute(sql, params)
+            return _rows_to_records(cursor)
+    finally:
+        connection.close()
 
 
 def query_listing_by_address(address_query: str, limit: int = 10) -> list[dict]:
@@ -128,25 +111,10 @@ def query_listing_by_address(address_query: str, limit: int = 10) -> list[dict]:
 
     params = [f"%{address_query.strip()}%", limit]
 
-    conn = get_db_connection()
-    cur = conn.cursor()
-    cur.execute(sql, params)
-
-    columns = [desc[0] for desc in cur.description]
-    results = []
-
-    for row in cur.fetchall():
-        record = {}
-
-        for col, val in zip(columns, row):
-            if hasattr(val, "as_tuple"):
-                record[col] = float(val)
-            else:
-                record[col] = val
-
-        results.append(record)
-
-    cur.close()
-    conn.close()
-
-    return results
+    connection = get_db_connection()
+    try:
+        with connection.cursor() as cursor:
+            cursor.execute(sql, params)
+            return _rows_to_records(cursor)
+    finally:
+        connection.close()

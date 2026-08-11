@@ -40,12 +40,18 @@ Create a `.env` file at the project root, not inside `Backend/`:
 OPENAI_API_KEY=your_openai_api_key
 OPENAI_MODEL=gpt-5.6-luna
 OPENAI_TIMEOUT_SECONDS=180
-SUPABASE_DB_PASSWORD=your_supabase_database_password
+DATABASE_HOST=your_supabase_pooler_host
+DATABASE_PORT=5432
+DATABASE_NAME=postgres
+DATABASE_USER=your_supabase_database_user
+DATABASE_PASSWORD=your_supabase_database_password
+DATABASE_SSLMODE=require
+ALLOWED_ORIGINS=http://localhost:5173,http://127.0.0.1:5173
 REDFIN_KEY=your_redfin_key_if_used
 ```
 
-`OPENAI_MODEL` and `OPENAI_TIMEOUT_SECONDS` are optional. Do not commit real
-credentials.
+See the root `.env.example` for every optional setting. `REDFIN_KEY` is only needed
+by `runner.py`. Do not commit real credentials.
 
 ## Running the backend
 
@@ -227,4 +233,10 @@ above. Keep the key on the backend and never place it in `Frontend/.env`.
 
 ### `fe_sendauth: no password supplied`
 
-Your `.env` file is missing `SUPABASE_DB_PASSWORD`, or it is in the wrong directory.
+Your `.env` file is missing `DATABASE_PASSWORD` (or the legacy
+`SUPABASE_DB_PASSWORD`), or it is in the wrong directory.
+
+## Production deployment
+
+Use the root `Dockerfile` for the API and set `ALLOWED_ORIGINS` to the exact
+frontend origin. The complete AWS procedure is in the root `DEPLOYMENT.md`.
